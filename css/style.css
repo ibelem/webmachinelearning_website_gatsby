@@ -8,7 +8,7 @@ html, body {
 }
 
 #header .row>* {
-  width: auto !important;
+  width: auto;
 }
 
 .cf:before,
