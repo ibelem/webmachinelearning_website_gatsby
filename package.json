@@ -3,7 +3,8 @@
   "private": true,
   "description": "WebNN",
   "version": "0.1.0",
-  "license": "0BSD",
+  "author": "belem.zhang",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
