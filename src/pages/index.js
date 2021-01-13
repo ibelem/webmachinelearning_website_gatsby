@@ -1,11 +1,14 @@
 import React from "react"
 import Header from "../components/header"
+import Feature from "../components/feature"
+import Footer from "../components/footer"
 
 export default function Home() {
   return (
     <div>
-      <Header headerText="home"/>
-      <div>Hello Home 000</div>
+      <Header />
+      <Feature />
+      <Footer />
     </div>
   )
 }

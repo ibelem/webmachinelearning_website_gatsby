@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-export default function Header(props) {
+export default function Header() {
   return ( 
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -29,8 +29,10 @@ export default function Header(props) {
               </div>
               <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                 <Link to="/getting-started/" className="font-medium text-gray-500 hover:text-gray-900">Getting Started</Link>
+                <Link to="/specs/" className="font-medium text-gray-500 hover:text-gray-900">Specs</Link>
                 <Link to="/community/" className="font-medium text-gray-500 hover:text-gray-900">Community</Link>
                 <Link to="/blog/mdx" className="font-medium text-indigo-600 hover:text-indigo-500">Blog</Link>
+                <Link to="/faq/" className="font-medium text-gray-500 hover:text-gray-900">FAQ</Link>
               </div>
             </nav>
           </div>
@@ -52,39 +54,40 @@ export default function Header(props) {
               <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                 <div className="px-2 pt-2 pb-3 space-y-1" role="none">
                   <Link to="/getting-started/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Getting Started</Link>
-
+                  <Link to="/specs/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Specs</Link>
                   <Link to="/community/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">Community</Link>
                 </div>
                 <div role="none">
-                  <button className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100" role="menuitem">
+                  <Link to="/blog/mdx" className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100" role="menuitem">
                     Blog
-                  </button>
+                  </Link>
                 </div>
+                <Link to="/faq/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50" role="menuitem">FAQ</Link>
               </div>
             </div>
           </div>
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Data to enrich your</span>
-                <span className="block text-indigo-600 xl:inline">online business</span>
+              <h1 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
+                <span className="block xl:inline">Accelerating </span>
+                <span className="block text-indigo-600 xl:inline">deep neural networks</span>
+                <span className="block xl:inline"> on the web</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+              The Web Neural Network API is a new web standard that allows web apps and frameworks to accelerate deep neural networks with dedicated on-device hardware such as GPUs, CPUs with deep learning extensions, or purpose-built AI accelerators. 
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                    Getting started
+                    Getting Started
                   </button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
-                    Live demos
+                    Live Demos
                   </button>
                 </div>
-                {props.headerText}
               </div>
             </div>
           </main>
