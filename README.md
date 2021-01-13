@@ -9,6 +9,8 @@
  
 ## 🧐 What's inside?
 
+http://127.0.0.1:8000/___graphql
+
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
     .

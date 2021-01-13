@@ -5,7 +5,20 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Web Neural Network API`,
+  },
   pathPrefix: "/webnn-website",
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-postcss`
+  ],
 }
