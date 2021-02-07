@@ -11,15 +11,12 @@ module.exports = {
       gray: colors.trueGray,
       indigo: colors.indigo,
       blue: colors.blue,
-      red: colors.rose,
+      red: colors.red,
       yellow: colors.amber,
+      purple: colors.purple,
+      pink: colors.pink,
       nn: {
-        lightest: '#f9fafc',
-        light: '#ff7ce5',
-        DEFAULT: '#ff49db',
-        dark: '#ff16d1',
-        darkest: '#1f2d3d',
-        500: '#ff49db'
+        bg: '#0f2557'
       }
     }
   },
