@@ -65,22 +65,23 @@ export default function Header() {
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-40">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-2xl tracking-tight font-extrabold text-white sm:text-3xl md:text-4xl">
-                <span className="block xl:inline">WebNN: Accelerating </span>
-                <span className="block text-blue-600 xl:inline">deep neural networks</span>
+              <h1 className="text-2xl tracking-tight font-bold text-white sm:text-3xl md:text-4xl">
+                <span className="block xl:inline">WebNN API: </span>
+                <span className="block xl:inline">Accelerating </span>
+                <span className="block text-blue-200 xl:inline">deep neural networks</span>
                 <span className="block xl:inline"> on the web</span>
               </h1>
               <p className="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-             A new web standard that allows web apps and frameworks to accelerate deep neural networks with on-device hardware such as GPUs, CPUs with deep learning extensions, or purpose-built AI accelerators. 
+             A new web standard that allows web apps and frameworks to accelerate deep neural networks with on-device hardware such as GPUs, CPUs, or purpose-built AI accelerators. 
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 md:leading-4">
                     Getting Started
                   </button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
+                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 md:leading-4">
                     Live Demos
                   </button>
                 </div>
