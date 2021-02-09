@@ -8,14 +8,14 @@ export default function Footer() {
             </a>
             <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0">
                 <ul className="list-none p-0 font-thin flex flex-col text-left w-full">
-                    <li className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Features</li>
+                    <li className="inline-block py-2 px-3 text-white uppercase tracking-wide">Features</li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">WebNN Native</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Demos</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Performance</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Benchmark</a></li>
                 </ul>
                 <ul className="text-white-700 list-none p-0 font-thin flex flex-col text-left w-full">
-                    <li className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Community</li>
+                    <li className="inline-block py-2 px-3 text-white uppercase tracking-wide">Community</li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Blog</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Specs</a>
                     </li>
@@ -23,13 +23,13 @@ export default function Footer() {
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">FAQ</a></li>
                 </ul>
                 <ul className="list-none p-0 font-thin flex flex-col text-left w-full">
-                    <li className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Developers</li>
+                    <li className="inline-block py-2 px-3 text-white uppercase tracking-wide">Developers</li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Getting Started</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Developer API</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Documentation</a></li>
                 </ul>
                 <div className="text-white-700 flex flex-col w-full">
-                    <div className="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Follow Us</div>
+                    <div className="inline-block py-2 px-3 text-white uppercase tracking-wide font-thin">Follow Us</div>
                     <div className="flex pl-4 justify-start mt-2">
                         <a className="block flex items-center text-gray-200 hover:text-white mr-6 no-underline" href="#">
                             <svg viewBox="0 0 24 24" className="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg">

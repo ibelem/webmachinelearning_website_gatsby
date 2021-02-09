@@ -4,7 +4,7 @@ export default function Feature() {
     <div className="py-12 bg-white">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-        <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-600 sm:text-4xl">
+        <p className="mt-2 text-3xl leading-8 tracking-tight text-gray-600 sm:text-3xl">
             A better way to boost your deep learning inference speed
         </p>
         <p className="mt-4 max-w-2xl text-gray-500 lg:mx-auto">
@@ -23,7 +23,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
+                <dt className="text-lg leading-6 font-normal text-gray-900">
                 Latency
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
@@ -41,7 +41,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
+                <dt className="text-lg leading-6 font-normal text-gray-900">
                 Privacy
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
@@ -59,7 +59,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
+                <dt className="text-lg leading-6 font-normal text-gray-900">
                 Availability
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">
@@ -77,7 +77,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-medium text-gray-900">
+                <dt className="text-lg leading-6 font-normal text-gray-900">
                 Cost
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">

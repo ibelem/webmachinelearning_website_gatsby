@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 export default function Header() {
   return ( 
-    <div className="relative bg-white overflow-hidden">
+    <div id="header" className="relative bg-white overflow-hidden">
       <div id="banner" className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
@@ -24,11 +24,11 @@ export default function Header() {
                 </div>
               </div>
               <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                <Link to="/getting-started/" className="font-medium text-white hover:text-white">Getting Started</Link>
-                <Link to="/specs/" className="font-medium text-white hover:text-white">Specs</Link>
-                <Link to ="" className="font-medium text-white hover:text-white">Performance</Link>
-                <Link to="/blog/mdx" className="font-medium text-blue-600 hover:text-blue-500">Blog</Link>
-                <Link to="/community/" className="font-medium text-white hover:text-white">Community</Link>
+                <Link to="/getting-started/" className="text-white hover:text-white">Getting Started</Link>
+                <Link to="/specs/" className="text-white hover:text-white">Spec</Link>
+                <Link to ="" className="text-white hover:text-white">Performance</Link>
+                <Link to="/blog/mdx" className="text-blue-600 hover:text-blue-500">Blog</Link>
+                <Link to="/community/" className="text-white hover:text-white">Community</Link>
               </div>
             </nav>
           </div>
@@ -49,16 +49,16 @@ export default function Header() {
               </div>
               <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                 <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-                  <Link to="/getting-started/" className="block px-3 py-2 rounded-md text-base font-medium text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Getting Started</Link>
-                  <Link to="/specs/" className="block px-3 py-2 rounded-md text-base font-medium text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Specs</Link>
-                  <Link to="/community/" className="block px-3 py-2 rounded-md text-base font-medium text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Community</Link>
+                  <Link to="/getting-started/" className="block px-3 py-2 rounded-md text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Getting Started</Link>
+                  <Link to="/specs/" className="block px-3 py-2 rounded-md text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Specs</Link>
+                  <Link to="/community/" className="block px-3 py-2 rounded-md text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Community</Link>
                 </div>
                 <div role="none">
-                  <Link to="/blog/mdx" className="block w-full px-5 py-3 text-center font-medium text-nn bg-gray-50 hover:bg-gray-100" role="menuitem">
+                  <Link to="/blog/mdx" className="block w-full px-5 py-3 text-center text-nn bg-gray-50 hover:bg-gray-100" role="menuitem">
                     Blog
                   </Link>
                 </div>
-                <Link to="/faq/" className="block px-3 py-2 rounded-md text-base font-medium text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">FAQ</Link>
+                <Link to="/faq/" className="block px-3 py-2 rounded-md text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">FAQ</Link>
               </div>
             </div>
           </div>
@@ -76,12 +76,12 @@ export default function Header() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 md:leading-4">
+                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 md:leading-4">
                     Getting Started
                   </button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 md:leading-4">
+                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 md:leading-4">
                     Live Demos
                   </button>
                 </div>
@@ -90,9 +90,10 @@ export default function Header() {
           </main>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0">
+      <div id="bannerbg" className="lg:absolute lg:inset-y-0 lg:right-0">
         <img alt="WebNN" className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src={'/img/00.jpg'} />
       </div>
+      
     </div>
   )
 }
