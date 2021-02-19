@@ -11,10 +11,10 @@ export default function Header() {
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <button>
                     <span className="sr-only">Workflow</span>
-                    <img className="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg" alt="workflow" />
+                    <img className="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-white.svg" alt="workflow" />
                   </button>
                   <div className="-mr-2 flex items-center md:hidden">
-                    <button type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" id="main-menu" aria-haspopup="true">
+                    <button type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" id="main-menu" aria-haspopup="true">
                       <span className="sr-only">Open main menu</span>
                       <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -24,11 +24,11 @@ export default function Header() {
                 </div>
               </div>
               <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                <Link to="/getting-started/" className="text-white hover:text-white">Getting Started</Link>
-                <Link to="/specs/" className="text-white hover:text-white">Spec</Link>
-                <Link to ="" className="text-white hover:text-white">Performance</Link>
-                <Link to="/blog/mdx" className="text-blue-600 hover:text-blue-500">Blog</Link>
-                <Link to="/community/" className="text-white hover:text-white">Community</Link>
+                <Link to="/getting-started/" className="text-white hover:underline">Get Started</Link>
+                <Link to="/specs/" className="text-white hover:underline">Spec</Link>
+                <Link to ="" className="text-white hover:underline">Performance</Link>
+                <Link to="/blog/mdx" className="text-white hover:underline">Blog</Link>
+                <Link to="/community/" className="text-white hover:underline">Community</Link>
               </div>
             </nav>
           </div>
@@ -39,7 +39,7 @@ export default function Header() {
                   <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg" alt="workflow" />
                 </div>
                 <div className="-mr-2">
-                  <button type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                  <button type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                     <span className="sr-only">Close main menu</span>
                     <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -49,16 +49,16 @@ export default function Header() {
               </div>
               <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                 <div className="px-2 pt-2 pb-3 space-y-1" role="none">
-                  <Link to="/getting-started/" className="block px-3 py-2 rounded-md text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Getting Started</Link>
-                  <Link to="/specs/" className="block px-3 py-2 rounded-md text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Specs</Link>
-                  <Link to="/community/" className="block px-3 py-2 rounded-md text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Community</Link>
+                  <Link to="/getting-started/" className="block px-3 py-2 text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Getting Started</Link>
+                  <Link to="/specs/" className="block px-3 py-2 text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Specs</Link>
+                  <Link to="/community/" className="block px-3 py-2 text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">Community</Link>
                 </div>
                 <div role="none">
                   <Link to="/blog/mdx" className="block w-full px-5 py-3 text-center text-nn bg-gray-50 hover:bg-gray-100" role="menuitem">
                     Blog
                   </Link>
                 </div>
-                <Link to="/faq/" className="block px-3 py-2 rounded-md text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">FAQ</Link>
+                <Link to="/faq/" className="block px-3 py-2 text-base text-white-700 hover:text-white hover:bg-gray-50" role="menuitem">FAQ</Link>
               </div>
             </div>
           </div>
@@ -75,14 +75,14 @@ export default function Header() {
              A new web standard that allows web apps and frameworks to accelerate deep neural networks with on-device hardware such as GPUs, CPUs, or purpose-built AI accelerators. 
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
-                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 md:leading-4">
-                    Getting Started
+                <div className="shadow">
+                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 md:leading-4">
+                    Get Started
                   </button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 md:leading-4">
-                    Live Demos
+                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 md:leading-4">
+                    Demo
                   </button>
                 </div>
               </div>

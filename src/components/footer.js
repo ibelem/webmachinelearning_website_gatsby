@@ -10,7 +10,7 @@ export default function Footer() {
                 <ul className="list-none p-0 font-thin flex flex-col text-left w-full">
                     <li className="inline-block py-2 px-3 text-white uppercase tracking-wide">Features</li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">WebNN Native</a></li>
-                    <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Demos</a></li>
+                    <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Demo</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Performance</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Benchmark</a></li>
                 </ul>
@@ -24,7 +24,7 @@ export default function Footer() {
                 </ul>
                 <ul className="list-none p-0 font-thin flex flex-col text-left w-full">
                     <li className="inline-block py-2 px-3 text-white uppercase tracking-wide">Developers</li>
-                    <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Getting Started</a></li>
+                    <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Get Started</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Developer API</a></li>
                     <li><a href="#" className="inline-block py-2 px-3 text-gray-200 hover:text-white no-underline">Documentation</a></li>
                 </ul>

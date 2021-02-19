@@ -1,50 +1,47 @@
 import React from "react"
 export default function Card() {
   return ( 
-    <div className="py-12 bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mt-10">    
-            <div className="page-content">
-                <div className="card rounded-md">
-                    <div className="content">
-                    <h2 className="title">Live Demos</h2>
-                    <p className="copy text-sm italic font-thin mt-8 mb-8">Check out all of these live demos!</p>
-                    <button className="w-full flex items-center justify-center text-xs text-white bg-blue-600 hover:text-white hover:bg-nn-bg py-2 uppercase">
-                        Live Demos
-                    </button>
+    <div className="">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="">    
+                <div className="page-content grid-cols-3 grid justify-items-center">
+                    <div className="card rounded-md">
+                        <div className="content flex flex-col items-center">
+                        <h2 className="title text-gray-900">
+                            <img alt="TensorFlow.js" className="h-10 filter-grayscale hover:filter-none" src={'/img/trustedby/tensorflowjs.png'} />
+                        </h2>
+                        <p className="text-sm text-gray-600 italic font-thin my-4">Google TensorFlow.js Team: Our goal is to utilize web technologies to provide our users the best performance, that includes WASM, WebGPU, and the <span className="text-blue-600 font-bold">future WebNN standard</span>.</p>
+                        <a className="w-1/2 flex items-center justify-center text-xs text-white bg-blue-600 hover:text-white hover:bg-blue-700 py-2 uppercase" href="https://github.com/tensorflow/tfjs">
+                            TensorFlow.js Website
+                        </a>
+                        </div>
+                    </div>
+                    <div className="card rounded-md">
+                        <div className="content flex flex-col items-center">
+                        <h2 className="title text-gray-900">
+                            <img alt="TensorFlow.js" className="h-10 filter-grayscale hover:filter-none" src={'/img/trustedby/onnx.png'} />
+                        </h2>
+                        <p className="text-sm text-gray-600 italic font-thin my-4">Microsoft DirectML Team: The <span className="text-blue-600 font-bold">WebNN API</span> allows JavaScript frameworks to tap into cutting-edge machine learning innovations in the OS and the hardware platform.</p>
+                        <a className="w-1/2 flex items-center justify-center text-xs text-white bg-blue-600 hover:text-white hover:bg-blue-700 py-2 uppercase" href="https://onnx.ai">
+                            ONNX Website
+                        </a>
+                        </div>
+                    </div>
+                    <div className="card rounded-md">
+                        <div className="content flex flex-col items-center">
+                        <h2 className="title text-gray-900">
+                            <img alt="TensorFlow.js" className="h-10 filter-grayscale hover:filter-none" src={'/img/trustedby/openvino.png'} />
+                        </h2>
+                        <p className="text-sm text-gray-600 italic font-thin my-4">Intel Web Team: The client side AI and deep learning applications could be accelerated with near native OpenVINO high-performance to the web by <span className="text-blue-600 font-bold">WebNN API</span>.</p>
+                        <a className="w-1/2 flex items-center justify-center text-xs text-white bg-blue-600 hover:text-white hover:bg-blue-700 py-2 uppercase" href="https://docs.openvinotoolkit.org/latest/index.html">
+                            OpenVINO Website
+                        </a>
+                        </div>
                     </div>
                 </div>
-                <div className="card rounded-md">
-                    <div className="content">
-                    <h2 className="title">Performance</h2>
-                    <p className="copy text-sm italic font-thin mt-8 mb-8">The performance</p>
-                    <button className="w-full flex items-center justify-center text-xs text-white bg-blue-600 hover:text-white hover:bg-nn-bg py-2 uppercase">
-                        Performance
-                    </button>
-                    </div>
-                </div>
-                <div className="card rounded-md">
-                    <div className="content">
-                    <h2 className="title">Benchmark</h2>
-                    <p className="copy text-sm italic font-thin mt-8 mb-8">The MLPerf like Web Machine Learning benchmark.</p>
-                    <button className="w-full flex items-center justify-center text-xs text-white bg-blue-600 hover:text-white hover:bg-nn-bg py-2 uppercase">
-                        Benchmark
-                    </button>
-                    </div>
-                </div>
-                <div className="card rounded-md">
-                    <div className="content">
-                    <h2 className="title">Spec</h2>
-                    <p className="copy text-sm italic font-thin mt-8 mb-8">Check the W3C Web Neural Network API right now!</p>
-                    <button className="w-full flex items-center justify-center text-xs text-white bg-blue-600 hover:text-white hover:bg-nn-bg py-2 uppercase">
-                        Spec
-                    </button>
-                    </div>
-                </div>
+
             </div>
- 
         </div>
-    </div>
     </div>
   )
 }
