@@ -5,9 +5,9 @@ export default function Card() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="">    
                 <div className="page-content grid-cols-3 grid justify-items-center">
-                    <div className="card rounded-md">
+                    <div className="card p-4">
                         <div className="content flex flex-col items-center">
-                        <h2 className="title text-gray-900">
+                        <h2 className="title">
                             <img alt="TensorFlow.js" className="h-10 filter-grayscale hover:filter-none" src={'/img/trustedby/tensorflowjs.png'} />
                         </h2>
                         <p className="text-sm text-gray-600 italic font-thin my-4">Google TensorFlow.js Team: Our goal is to utilize web technologies to provide our users the best performance, that includes WASM, WebGPU, and the <span className="text-blue-600 font-bold">future WebNN standard</span>.</p>
@@ -16,9 +16,9 @@ export default function Card() {
                         </a>
                         </div>
                     </div>
-                    <div className="card rounded-md">
+                    <div className="card p-4">
                         <div className="content flex flex-col items-center">
-                        <h2 className="title text-gray-900">
+                        <h2 className="title">
                             <img alt="TensorFlow.js" className="h-10 filter-grayscale hover:filter-none" src={'/img/trustedby/onnx.png'} />
                         </h2>
                         <p className="text-sm text-gray-600 italic font-thin my-4">Microsoft DirectML Team: The <span className="text-blue-600 font-bold">WebNN API</span> allows JavaScript frameworks to tap into cutting-edge machine learning innovations in the OS and the hardware platform.</p>
@@ -27,9 +27,9 @@ export default function Card() {
                         </a>
                         </div>
                     </div>
-                    <div className="card rounded-md">
+                    <div className="card p-4">
                         <div className="content flex flex-col items-center">
-                        <h2 className="title text-gray-900">
+                        <h2 className="title">
                             <img alt="TensorFlow.js" className="h-10 filter-grayscale hover:filter-none" src={'/img/trustedby/openvino.png'} />
                         </h2>
                         <p className="text-sm text-gray-600 italic font-thin my-4">Intel Web Team: The client side AI and deep learning applications could be accelerated with near native OpenVINO high-performance to the web by <span className="text-blue-600 font-bold">WebNN API</span>.</p>
