@@ -16,7 +16,17 @@ module.exports = {
       purple: colors.purple,
       pink: colors.pink,
       nn: {
-        bg: '#0f2557'
+        t1: '#4777c0',
+        t2: '#61bafb',
+        tgray1: '#474c58',
+        tgray2: '#d0d8e5',
+        bgd1: '#3f69b8',
+        bgd2: '#4873c2',
+        bgd3: '#5eb4fe',
+        bgd4: '#62d3fd',
+        bgg1: '#f2f5fb',
+        bgg2: '#ffffff',
+        bgg3: '#f8f9ff'
       }
     }
   },

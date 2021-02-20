@@ -1,10 +1,10 @@
 import React from "react"
 export default function Footer() {
   return ( 
-    <footer className="bg-nn-bg text-white pt-12 pb-8 px-4">
+    <footer className="bg-nn-bgd1 text-white pt-12 pb-8 px-4">
         <div className="mx-auto max-w-7xl container overflow-hidden flex flex-col lg:flex-row justify-between">
             <a href="/" className="block ml-10">
-                <img src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg" className="h-8 w-auto sm:h-10" alt="logo" />
+                <img src="https://tailwindui.com/img/logos/workflow-mark-white.svg" className="h-8 w-auto sm:h-10" alt="logo" />
             </a>
             <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0">
                 <ul className="list-none p-0 font-normal flex flex-col text-left w-full">
