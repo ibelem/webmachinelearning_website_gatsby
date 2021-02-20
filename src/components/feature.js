@@ -23,7 +23,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-normal text-gray-900">
+                <dt className="text-lg leading-6 font-normal text-gray-600">
                 Latency
                 </dt>
                 <dd className="mt-2 text-base text-gray-600">
@@ -41,7 +41,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-normal text-gray-900">
+                <dt className="text-lg leading-6 font-normal text-gray-600">
                 Privacy
                 </dt>
                 <dd className="mt-2 text-base text-gray-600">
@@ -59,7 +59,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-normal text-gray-900">
+                <dt className="text-lg leading-6 font-normal text-gray-600">
                 Availability
                 </dt>
                 <dd className="mt-2 text-base text-gray-600">
@@ -77,7 +77,7 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-normal text-gray-900">
+                <dt className="text-lg leading-6 font-normal text-gray-600">
                 Cost
                 </dt>
                 <dd className="mt-2 text-base text-gray-600">

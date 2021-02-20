@@ -24,11 +24,11 @@ export default function Header() {
                 </div>
               </div>
               <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                <Link to="/getting-started/" className="text-white hover:underline">Get Started</Link>
-                <Link to="/specs/" className="text-white hover:underline">Spec</Link>
-                <Link to ="" className="text-white hover:underline">Performance</Link>
-                <Link to="/blog/mdx" className="text-white hover:underline">Blog</Link>
-                <Link to="/community/" className="text-white hover:underline">Community</Link>
+                <Link to="/getting-started/" className="link link--dia text-white">Get Started</Link>
+                <Link to="/specs/" className="link link--dia text-white">Spec</Link>
+                <Link to ="" className="link link--dia text-white">Performance</Link>
+                <Link to="/blog/mdx" className="link link--dia text-white">Blog</Link>
+                <Link to="/community/" className="link link--dia text-white">Community</Link>
               </div>
             </nav>
           </div>
@@ -65,23 +65,31 @@ export default function Header() {
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-40">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-2xl tracking-tight font-bold text-white sm:text-3xl md:text-4xl">
+              <h1 className="text-2xl tracking-tight font-thin text-white sm:text-3xl md:text-4xl">
                 <span className="block xl:inline">WebNN API: </span>
                 <span className="block xl:inline">Accelerating </span>
-                <span className="block text-blue-200 xl:inline">deep neural networks</span>
+                <span className="block xl:inline font-normal">deep neural networks</span>
                 <span className="block xl:inline"> on the web</span>
               </h1>
-              <p className="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-white font-thin sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
              A new web standard that allows web apps and frameworks to accelerate deep neural networks with on-device hardware such as GPUs, CPUs, or purpose-built AI accelerators. 
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="shadow">
-                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10 md:leading-4">
-                    Get Started
+                  <button className="button button--atlas w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 text-white bg-blue-600 md:py-4 md:text-lg md:px-10 md:leading-4">
+                    <span>Get Started</span>
+                    <div className="marquee" aria-hidden="true">
+                      <div className="marquee__inner">
+                        <span>Get Started</span>
+                        <span>Get Started</span>
+                        <span>Get Started</span>
+                        <span>Get Started</span>
+                      </div>
+                    </div>
                   </button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 md:leading-4">
+                  <button className="button button--mimas w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 text-gray-600 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10 md:leading-4">
                     Demo
                   </button>
                 </div>
