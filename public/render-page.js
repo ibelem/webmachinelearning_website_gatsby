@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("/home/belem/github/webnn-website/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"));
+		module.exports = factory(require("/home/belem/github/webnn-website/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else if(typeof define === 'function' && define.amd)
-		define("lib", ["/home/belem/github/webnn-website/node_modules/lodash/merge.js", "react", "react-dom/server"], factory);
+		define("lib", ["/home/belem/github/webnn-website/node_modules/lodash/merge.js", "react", "react-dom/server", "react-helmet"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("/home/belem/github/webnn-website/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"));
+		exports["lib"] = factory(require("/home/belem/github/webnn-website/node_modules/lodash/merge.js"), require("react"), require("react-dom/server"), require("react-helmet"));
 	else
-		root["lib"] = factory(root["/home/belem/github/webnn-website/node_modules/lodash/merge.js"], root["react"], root["react-dom/server"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__) {
+		root["lib"] = factory(root["/home/belem/github/webnn-website/node_modules/lodash/merge.js"], root["react"], root["react-dom/server"], root["react-helmet"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_lodash_merge__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_dom_server__, __WEBPACK_EXTERNAL_MODULE_react_helmet__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -115,6 +115,22 @@ var plugins = [{
     "rehypePlugins": [],
     "mediaTypes": ["text/markdown", "text/x-markdown"],
     "root": "/home/belem/github/webnn-website"
+  }
+}, {
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
+}, {
+  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr */ "./node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr.js"),
+  options: {
+    "plugins": [],
+    "fonts": [{
+      "family": "Roboto Slab",
+      "variable": true,
+      "weights": ["100..500"]
+    }],
+    "display": "swap"
   }
 }]; // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
@@ -838,6 +854,281 @@ function createElement (type, props) {
 
 /***/ }),
 
+/***/ "./node_modules/gatsby-plugin-google-fonts-v2/constants.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-google-fonts-v2/constants.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.VARIABLE_WEIGHT_REGEX = /(^\d{3})(?:[.]{2})(\d{3}$)/gm;
+exports.FIXED_WEIGHTS = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];
+exports.BASE_URL = 'https://fonts.googleapis.com/css2';
+exports.BASE_URL_V1 = 'https://fonts.googleapis.com/css';
+exports.ERRORS = {
+  NOT_VALID_WEIGHT: 'Regular font selected but selected weights not valid',
+  TOO_MANY_WEIGHTS: 'Variable font supports a maximum of 2 weights (regular and italic)',
+  NOT_VALID_VARIABLE_WEIGHT_FORMAT: 'The used weight format did not match. The valid format is (min)..(max) where min and max are 3 digit numbers',
+  VARIABLE_LEGACY_CONFLICT: 'You want to use v1 API but are requesting variable fonts. That will not work. Remove one or the other'
+};
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-google-fonts-v2/functions.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-google-fonts-v2/functions.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __assign = this && this.__assign || function () {
+  __assign = Object.assign || function (t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+      s = arguments[i];
+
+      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+    }
+
+    return t;
+  };
+
+  return __assign.apply(this, arguments);
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var constants_1 = __webpack_require__(/*! ./constants */ "./node_modules/gatsby-plugin-google-fonts-v2/constants.js");
+
+exports.filterFonts = function (options) {
+  var errors = [];
+  var accepted = [];
+  var fonts = options.fonts;
+
+  var _loop_1 = function (font) {
+    var family = font.family,
+        variable = font.variable,
+        weights = font.weights;
+
+    if (!variable) {
+      if (weights) {
+        var validWeights = weights.filter(function (weight) {
+          if (constants_1.FIXED_WEIGHTS.includes(weight)) {
+            return true;
+          } else {
+            errors.push({
+              family: family,
+              weight: weight,
+              reason: constants_1.ERRORS.NOT_VALID_WEIGHT
+            });
+          }
+        });
+        accepted.push(__assign(__assign({}, font), {
+          weights: validWeights
+        }));
+      } else {
+        accepted.push(__assign({}, font));
+      }
+    } else {
+      // if variable and len > 2
+      if (weights) {
+        if (weights.length > 2) {
+          errors.push({
+            family: family,
+            reason: constants_1.ERRORS.TOO_MANY_WEIGHTS
+          });
+          return "continue";
+        }
+
+        var validWeights = weights.filter(function (weight) {
+          if (weight && weight.match(constants_1.VARIABLE_WEIGHT_REGEX)) {
+            return true;
+          } else {
+            errors.push({
+              family: family,
+              weight: weight,
+              reason: constants_1.ERRORS.NOT_VALID_VARIABLE_WEIGHT_FORMAT
+            });
+            return false;
+          }
+        });
+        accepted.push(__assign(__assign({}, font), {
+          weights: validWeights
+        }));
+      }
+    }
+  };
+
+  for (var _i = 0, fonts_1 = fonts; _i < fonts_1.length; _i++) {
+    var font = fonts_1[_i];
+
+    _loop_1(font);
+  }
+
+  return {
+    accepted: accepted,
+    errors: errors
+  };
+};
+
+exports.checkNoLegacyVariableConflict = function (options) {
+  var legacy = options.legacy,
+      fonts = options.fonts;
+
+  if (!legacy) {
+    return true;
+  } else {
+    for (var _i = 0, fonts_2 = fonts; _i < fonts_2.length; _i++) {
+      var font = fonts_2[_i];
+
+      if (font.variable) {
+        return false;
+      }
+    }
+  }
+};
+
+exports.formatFontName = function (font) {
+  var family = font.family,
+      strictName = font.strictName;
+
+  if (strictName) {
+    return family;
+  }
+
+  return family.split(' ').map(function (token) {
+    return token.replace(/^\w/, function (s) {
+      return s.toUpperCase();
+    });
+  }).join(' ').replace(/ /g, '+');
+};
+
+exports.getFontWeight = function (font) {
+  var variable = font.variable,
+      weights = font.weights;
+
+  if (weights) {
+    if (variable) {
+      var boldWeight = weights[0],
+          italWeight = weights[1];
+      return (italWeight ? 'ital,' : '') + "wght@" + (boldWeight ? "" + (italWeight ? '0,' : '') + boldWeight : '') + (boldWeight && italWeight ? ';' : '') + (italWeight ? "1," + italWeight : '');
+    } else {
+      return "wght@" + weights.join(';');
+    }
+  }
+
+  return '';
+};
+
+exports.assembleFontsLink = function (fonts) {
+  return fonts.map(function (font) {
+    var family = exports.formatFontName(font);
+    var weights = exports.getFontWeight(font);
+    return "family=" + family + (weights ? ":" + weights : '');
+  }).join('&');
+};
+
+exports.setDisplay = function (options) {
+  return options.display ? "&display=" + options.display : '&display=swap';
+};
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(__webpack_require__(/*! react */ "react"));
+
+var constants_1 = __webpack_require__(/*! ./constants */ "./node_modules/gatsby-plugin-google-fonts-v2/constants.js");
+
+var utils_1 = __webpack_require__(/*! ./utils */ "./node_modules/gatsby-plugin-google-fonts-v2/utils.js");
+
+var functions_1 = __webpack_require__(/*! ./functions */ "./node_modules/gatsby-plugin-google-fonts-v2/functions.js");
+/* istanbul ignore next */
+
+
+exports.onRenderBody = function (_a, options) {
+  var setHeadComponents = _a.setHeadComponents; // if legacy mode was used and variable font request was found
+  // exit immediately
+
+  if (!functions_1.checkNoLegacyVariableConflict(options)) {
+    utils_1.log(constants_1.ERRORS.VARIABLE_LEGACY_CONFLICT);
+    return;
+  }
+
+  var link;
+
+  if (!options.legacy) {
+    var finalFonts = functions_1.filterFonts(options);
+
+    if (finalFonts.errors.length > 0 && options.verbose) {
+      utils_1.log('The following fonts/weights were not loaded');
+      utils_1.log(finalFonts.errors);
+    }
+
+    var fonts = functions_1.assembleFontsLink(finalFonts.accepted);
+    link = constants_1.BASE_URL + "?" + fonts + functions_1.setDisplay(options);
+  }
+
+  setHeadComponents([react_1.default.createElement('link', {
+    key: 'fonts',
+    href: link,
+    rel: 'stylesheet'
+  })]);
+};
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-google-fonts-v2/utils.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-google-fonts-v2/utils.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/* istanbul ignore next */
+
+exports.log = function (message) {
+  console.log('\n===gatsby-plugin-google-fonts-v2===');
+  console.log(message);
+  console.log('\n');
+};
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-plugin-mdx/context.js":
 /*!***************************************************!*\
   !*** ./node_modules/gatsby-plugin-mdx/context.js ***!
@@ -1044,6 +1335,44 @@ const WrapRootElement = ({
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(MDXConsumer, null, element);
 
 /* harmony default export */ __webpack_exports__["default"] = (WrapRootElement);
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.onRenderBody = void 0;
+
+var _reactHelmet = __webpack_require__(/*! react-helmet */ "react-helmet");
+
+var onRenderBody = function onRenderBody(_ref) {
+  var setHeadComponents = _ref.setHeadComponents,
+      setHtmlAttributes = _ref.setHtmlAttributes,
+      setBodyAttributes = _ref.setBodyAttributes;
+
+  var helmet = _reactHelmet.Helmet.renderStatic(); // These action functions were added partway through the Gatsby 1.x cycle.
+
+
+  if (setHtmlAttributes) {
+    setHtmlAttributes(helmet.htmlAttributes.toComponent());
+  }
+
+  if (setBodyAttributes) {
+    setBodyAttributes(helmet.bodyAttributes.toComponent());
+  }
+
+  setHeadComponents([helmet.title.toComponent(), helmet.link.toComponent(), helmet.meta.toComponent(), helmet.noscript.toComponent(), helmet.script.toComponent(), helmet.style.toComponent(), helmet.base.toComponent()]);
+};
+
+exports.onRenderBody = onRenderBody;
 
 /***/ }),
 
@@ -2156,6 +2485,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 /***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_react_dom_server__;
+
+/***/ }),
+
+/***/ "react-helmet":
+/*!*******************************!*\
+  !*** external "react-helmet" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_react_helmet__;
 
 /***/ })
 

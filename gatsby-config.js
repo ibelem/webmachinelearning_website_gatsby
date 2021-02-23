@@ -19,6 +19,20 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-mdx`,
-    `gatsby-plugin-postcss`
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Roboto Slab',
+            variable: true,
+            weights: ['100..500']
+          }
+        ],
+        display: 'swap'
+      }
+    }
   ],
 }

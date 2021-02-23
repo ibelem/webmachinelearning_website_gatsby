@@ -4,6 +4,10 @@
 
 @layer utilities {
 
+    body {
+        font-family: 'Roboto Slab'
+    }
+
     @variants hover, focus {
         .filter-none {
           filter: none;
@@ -11,10 +15,23 @@
         .filter-grayscale {
           filter: grayscale(100%);
         }
+        .filter-white {
+          filter: brightness(0) invert(1);
+        }
     }
 
+    /* 
     #banner {
         height: 100vh;
+    }
+    */
+
+    .supported div span {
+        display: none;
+    }
+
+    .footer {
+        background-image: linear-gradient(135deg, #3f69b8, #4873c2, #62d3fd);
     }
 
     ::-webkit-scrollbar-track
@@ -41,8 +58,9 @@
         background: linear-gradient(-45deg, #161f6d, #00abe1, #23a6d5);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
-        */
+        
         background-image: linear-gradient(135deg, #f2f5fb, #f2f5fa);
+        */
     }
 
     .getstarted {
@@ -196,7 +214,7 @@
     .marquee span {
         text-align: center;
         white-space: nowrap;
-        padding: 1rem 0.5rem;
+        padding: 0.75rem 0.5rem;
     }
     
     @keyframes marquee {
@@ -233,7 +251,7 @@
 
     @media (min-width: 600px) {
         .card {
-            height: 200px;
+            height: 180px;
         }
     }
 

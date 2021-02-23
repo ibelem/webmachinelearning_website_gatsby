@@ -1,19 +1,19 @@
 import React from "react"
 export default function Feature() {
   return ( 
-    <div className="pt-12 pb-6">
+    <div className="py-10 bg-nn-bgg1">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-        <p className="mt-2 text-3xl leading-8 tracking-tight text-nn-tgray1 sm:text-3xl">
+        <p className="text-3xl leading-8 tracking-tight text-nn-t1 sm:text-3xl">
             A better way to boost your deep learning inference speed
         </p>
-        <p className="mt-4 max-w-2xl text-nn-tgray1 lg:mx-auto">
+        <p className="mt-2 max-w-2xl text-nn-tgray1 lg:mx-auto font-light">
             via platformant numeric computation capabilities
         </p>
         </div>
 
-        <div className="mt-10">
-        <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+        <div className="mt-6">
+        <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-6">
             <div className="flex">
             <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-12 w-12 text-nn-t1">
@@ -23,10 +23,10 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-normal text-nn-tgray1">
+                <dt className="text-lg leading-6 text-nn-tgray1">
                 Latency
                 </dt>
-                <dd className="mt-2 text-base text-nn-tgray1">
+                <dd className="mt-2 text-nn-tgray1 font-light">
                 In-browser inference enables novel use cases with local media sources. 
                 </dd>
             </div>
@@ -41,10 +41,10 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-normal text-nn-tgray1">
+                <dt className="text-lg leading-6 text-nn-tgray1">
                 Privacy
                 </dt>
-                <dd className="mt-2 text-base text-nn-tgray1">
+                <dd className="mt-2 text-nn-tgray1 font-light">
                 User data stays on-device and preserves user-privacy.
                 </dd>
             </div>
@@ -59,10 +59,10 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-normal text-nn-tgray1">
+                <dt className="text-lg leading-6 text-nn-tgray1">
                 Availability
                 </dt>
-                <dd className="mt-2 text-base text-nn-tgray1">
+                <dd className="mt-2 text-nn-tgray1 font-light">
                 No reliance on the network after initial asset caching for offline case. 
                 </dd>
             </div>
@@ -77,10 +77,10 @@ export default function Feature() {
                 </div>
             </div>
             <div className="ml-4">
-                <dt className="text-lg leading-6 font-normal text-nn-tgray1">
+                <dt className="text-lg leading-6 text-nn-tgray1">
                 Cost
                 </dt>
-                <dd className="mt-2 text-base text-nn-tgray1">
+                <dd className="mt-2 text-nn-tgray1 font-light">
                 Computing on client devices means no server farms needed.
                 </dd>
             </div>
