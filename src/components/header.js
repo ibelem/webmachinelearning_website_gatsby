@@ -4,7 +4,7 @@ export default function Header() {
   return ( 
     <div id="header" className="relative overflow-hidden">
       <div id="banner" className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
+        <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-40">
           <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
             <nav className="relative flex lg:max-w-4xl items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
               <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -26,7 +26,7 @@ export default function Header() {
               <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                 <Link to="/getting-started/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Get Started</Link>
                 <Link to="/specs/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Spec</Link>
-                <Link to ="" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Performance</Link>
+                <Link to ="/specs/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Performance</Link>
                 <Link to="/blog/mdx" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Blog</Link>
                 <Link to="/community/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Community</Link>
               </div>
