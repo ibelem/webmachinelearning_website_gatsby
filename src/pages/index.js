@@ -2,6 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 import Header from "../components/header"
 import Feature from "../components/feature"
+import Arch from "../components/arch"
 import Card from "../components/card"
 import SupportedPlatforms from "../components/platform"
 import Footer from "../components/footer"
@@ -14,6 +15,7 @@ export default function Home() {
       </Helmet>
       <Header />
       <Feature />
+      <Arch />
       <Card />
       <SupportedPlatforms />
       <Footer />
