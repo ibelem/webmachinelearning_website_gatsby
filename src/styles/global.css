@@ -33,21 +33,11 @@
     .cls-1 {fill:#fc8777; } 
     .cls-2, .cls-5 { font-size:9px; }
     .cls-2 { fill:#fff; }
-    .cls-3 { letter-spacing:-0.02em; } 
     .cls-4,.cls-5{ fill:#4777c0; } 
-    .cls-6 { letter-spacing:-0.01em; }
-    .cls-7 { letter-spacing:0em; }
-    .cls-8 { letter-spacing:-0.01em; } 
-    .cls-9 { letter-spacing:-0.05em; }
-    .cls-10 {letter-spacing:-0.06em; }
-    .cls-11 {letter-spacing:0.01em; } 
     .cls-12 { fill:url(#linear-gradient); }
     .cls-13 { fill:#ffd42b; }
-    .cls-14 { letter-spacing:0.01em; } 
-    .cls-15 { letter-spacing:-0.02em; }
-    .cls-16 { letter-spacing:-0.01em; } 
     .cls-17,.cls-21 { opacity:0.6; } 
-    .cls-18,.cls-19,.cls-20,.cls-21,.cls-22 { fill:none;stroke:#4777c0; } 
+    .cls-18,.cls-19,.cls-20,.cls-21,.cls-22 { fill:none; stroke:#4777c0; } 
     .cls-18,.cls-20,.cls-21,.cls-22 { stroke-linecap:round; }
     .cls-18,.cls-20,.cls-21 { stroke-linejoin:round; } 
     .cls-19,.cls-22 { stroke-miterlimit:10; }

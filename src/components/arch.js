@@ -12,31 +12,33 @@ export default function Arch() {
                         </defs>
                         <g id="Base">
                             <rect className="cls-1" x="0.23" y="90" width="108" height="26" />
-                            <text className="cls-2" transform="translate(16.9 107)"><tspan className="cls-3">W</tspan><tspan x="8.26" y="0">ebGPU / </tspan><tspan className="cls-3" x="44.99" y="0">W</tspan><tspan x="53.24" y="0">ebGL</tspan></text>
-                            <path className="cls-4" d="M259,55V79H153V55H259m1-1H152V80H260V54Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(156.78 56)">JS ML <tspan className="cls-6" x="28.79" y="0">F</tspan><tspan x="34.27" y="0">ra</tspan><tspan className="cls-7" x="42.95" y="0">m</tspan><tspan x="51.41" y="0">ewo</tspan><tspan className="cls-8" x="68.74" y="0">r</tspan><tspan x="72.37" y="0">ks</tspan><tspan className="cls-9" x="-11.2" y="10.8">T</tspan><tspan x="-5.99" y="10.8">ensorF</tspan><tspan className="cls-8" x="23.59" y="10.8">l</tspan><tspan x="26.34" y="10.8">o</tspan><tspan className="cls-10" x="31.39" y="10.8">w</tspan><tspan x="38.29" y="10.8">.js, ON</tspan><tspan className="cls-11" x="64.77" y="10.8">N</tspan><tspan x="71.7" y="10.8">X.js...</tspan></text>
+                            <text className="cls-2" transform="translate(16.9 107)">WebGPU / WebGL</text>
+                            <path className="cls-4 gl" d="M259,55V79H153V55H259m1-1H152V80H260V54Z" transform="translate(-8 -9)" />
+                            <text className="cls-5" transform="translate(156.78 56)">JS ML Frameworks<tspan className="cls-9" x="-11.2" y="10.8">TensorFlow.js, ONNX.js...</tspan></text>
                             <path className="cls-4" d="M115.23,10V34H9.23V10h106m1-1H8.23V35h108V9Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(24.42 17)">ON<tspan className="cls-11" x="13.21" y="0">N</tspan><tspan x="20.14" y="0">X Models</tspan></text>
+                            <text className="cls-5" transform="translate(24.42 17)">ONNX Models</text>
                             <path className="cls-4" d="M259,10V34H153V10H259m1-1H152V35H260V9Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(156.33 17)"><tspan className="cls-9">T</tspan><tspan x="5.21" y="0">ensorF</tspan><tspan className="cls-8" x="34.79" y="0">l</tspan><tspan x="37.54" y="0">ow Models</tspan></text>
+                            <text className="cls-5" transform="translate(156.33 17)">TensorFlow Models</text>
                             <path className="cls-4" d="M403,10V34H297V10H403m1-1H296V35H404V9Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(313.35 17)">Ot<tspan className="cls-7" x="9.65" y="0">h</tspan><tspan x="15.41" y="0">er Models</tspan></text>
+                            <text className="cls-5" transform="translate(313.35 17)">Other Models</text>
                             <rect className="cls-12" x="144" y="90" width="108" height="26" />
-                            <text className="cls-2" transform="translate(173.26 107)"><tspan className="cls-3">W</tspan><tspan x="8.26" y="0">ebNN API</tspan></text>
+                            <text className="cls-2" transform="translate(173.26 107)">WebNN API</text>
                             <rect className="cls-13" x="288" y="90" width="108" height="26" />
-                            <text className="cls-2" transform="translate(294.54 107)"><tspan className="cls-3">W</tspan><tspan x="8.26" y="0">ebAssem</tspan><tspan className="cls-7" x="47.42" y="0">b</tspan><tspan x="52.58" y="0">ly </tspan><tspan className="cls-14" x="62.76" y="0">(</tspan><tspan className="cls-15" x="65.75" y="0">W</tspan><tspan x="74" y="0">asm)</tspan></text>
+                            <text className="cls-2" transform="translate(294.54 107)">WebAssembly (Wasm)</text>
                             <path className="cls-4" d="M88.87,145v24h-79V145h79m1-1h-81v26h81V144Z" transform="translate(-8 -9)" />
                             <text className="cls-5" transform="translate(14.22 146)">ML Compute<tspan x="0.63" y="10.8">macOS / iOS</tspan></text>
                             <path className="cls-4" d="M194,145v24H115V145h79m1-1H114v26h81V144Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(126.77 146)">Di<tspan className="cls-16" x="9.19" y="0">r</tspan><tspan x="12.83" y="0">ectML</tspan><tspan x="-0.06" y="10.8">Wi</tspan><tspan className="cls-7" x="11.29" y="10.8">n</tspan><tspan x="17.04" y="10.8">dows</tspan></text>
+                            <text className="cls-5" transform="translate(126.77 146)">DirectML<tspan x="-0.06" y="10.8">Windows</tspan></text>
                             <path className="cls-4" d="M300,145v24H221V145h79m1-1H220v26h81V144Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(236.92 146)">NN API<tspan x="-1.81" y="10.8">A</tspan><tspan className="cls-7" x="4.78" y="10.8">n</tspan><tspan x="10.53" y="10.8">d</tspan><tspan className="cls-8" x="15.93" y="10.8">r</tspan><tspan x="19.57" y="10.8">oid</tspan></text>
+                            <text className="cls-5" transform="translate(236.92 146)">NN API<tspan x="-1.81" y="10.8">Android</tspan></text>
                             <path className="cls-4" d="M403,145v24H324V145h79m1-1H323v26h81V144Z" transform="translate(-8 -9)" />
                             <text className="cls-5" transform="translate(333 146)">OpenVINO<tspan x="10.14" y="10.8">Linux</tspan></text>
                             <path className="cls-4" d="M115.23,190v24H9.23V190h106m1-1H8.23v26h108V189Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(45.08 197)">CPU</text><path className="cls-4" d="M259,190v24H153V190H259m1-1H152v26H260V189Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(188.71 197)">GPU</text><path className="cls-4" d="M403,190v24H297V190H403m1-1H296v26H404V189Z" transform="translate(-8 -9)" />
-                            <text className="cls-5" transform="translate(307.03 197)">ML Accelera<tspan className="cls-8" x="53.36" y="0">t</tspan><tspan x="56.57" y="0">ors</tspan></text>
+                            <text className="cls-5" transform="translate(45.08 197)">CPU</text>
+                            <path className="cls-4" d="M259,190v24H153V190H259m1-1H152v26H260V189Z" transform="translate(-8 -9)" />
+                            <text className="cls-5" transform="translate(188.71 197)">GPU</text>
+                            <path className="cls-4" d="M403,190v24H297V190H403m1-1H296v26H404V189Z" transform="translate(-8 -9)" />
+                            <text className="cls-5" transform="translate(307.03 197)">ML Accelerators</text>
                         </g>
                         <g id="Lines" className="cls-17">
                             <line className="cls-18" x1="198.5" y1="41.19" x2="198.5" y2="26.5" />
@@ -74,7 +76,7 @@ export default function Arch() {
                         </g>
                     </svg>
                 </div>
-                <div className="place-self-center font-light">Web applications and frameworks including TensorFlow.js, ONNX.js  can take advantage of the native operating system services for machine learning and the underlying hardware innovations available on the user's computers to implement consistent, efficient, and reliable AI experiences on the web platform.</div>
+                <div className="place-self-center text-nn-tgray1">Web applications and frameworks including TensorFlow.js, ONNX.js  can take advantage of the native operating system services for machine learning and the underlying hardware innovations available on the user's computers to implement consistent, efficient, and reliable AI experiences on the web platform.</div>
             </div>
         </div>
     )
