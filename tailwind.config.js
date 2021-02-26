@@ -34,7 +34,8 @@ module.exports = {
         bgd4: '#62d3fd',
         bgg1: '#f2f5fb',
         bgg2: '#ffffff',
-        bgg3: '#f8f9ff'
+        bgg3: '#f8f9ff',
+        svgb: '#A7E0E7'
       }
     }
   },
