@@ -29,47 +29,55 @@
     .arch svg {
         height: 300px;
     }
+    
+    #logo, #logow {
+        width: 120px;
+    }
+
+    .logo-1 { font-size:120px; fill:#4777c0; font-weight:600; }
+
+    #logow .logo-1 { fill:#ffffff; }
 
     .arc-1 {fill:#fc8777; } 
     .arc-2, .arc-5 { font-size:9px; }
     .arc-2 { fill:#fff; }
-    .arc-4 { fill:#E5E7EB; } 
+    .arc-4 { fill:#d0ebff; } 
     .arc-5 {fill: #474c58; }
     .arc-12 { fill:url(#linear-gradient); }
     .arc-13 { fill:#90b665; }
-    .arc-18,.arc-19,.arc-20,.arc-21,.arc-22 { fill:none; stroke:#E5E7EB; stroke-width: 1px; } 
+    .arc-18,.arc-19,.arc-20,.arc-21,.arc-22 { fill:none; stroke:#d0ebff; stroke-width:0.25px; } 
     .arc-18,.arc-20,.arc-21,.arc-22 { stroke-linecap:round; }
     .arc-18,.arc-20,.arc-21 { stroke-linejoin:round; } 
     .arc-19,.arc-22 { stroke-miterlimit:10; }
     .arc-20 { stroke-dasharray:1 4.99; }
 
-    text:hover {
+    .arch text:hover {
         font-weight: 500;
     }
-    text:hover:not(.webgpu, .webnn, .webassembly) {
+    .arch text:hover:not(.webgpu, .webnn, .webassembly) {
         fill: #4777c0;
     }
 
-    path:hover {
+    .arch path:hover {
         stroke: #4777c0;
     }
 
     .webgpu:hover ~ .gpuline, .webgpu:hover ~ .gpupath {
-        stroke: #EC4899;
+        stroke: #fc8777;
         animation: 0.5s draw linear forwards;
     }
 
     .webgpu:hover ~ .gpu, .webgpu:hover ~ .gputext {
-        fill: #EC4899;
+        fill: #fc8777;
     }
     
     .webassembly:hover ~ .wasmline, .webassembly:hover ~ .wasmpath {
-        stroke: #10B981;
+        stroke: #90b665;
         animation: 0.5s draw linear forwards;
     }
 
     .webassembly:hover ~ .wasm, .webassembly:hover ~ .wasmtext {
-        fill: #10B981;
+        fill: #90b665;
     }
 
 
@@ -86,12 +94,12 @@
         0% {
           stroke-dasharray: 140 540;
           stroke-dashoffset: -474;
-          stroke-width: 1px;
+          stroke-width: 0.5px;
         }
         100% {
           stroke-dasharray: 760;
           stroke-dashoffset: 0;
-          stroke-width: 1px;
+          stroke-width: 0.5px;
         }
       }
 
@@ -99,19 +107,28 @@
         height: 500px;
     }
 
-    .cls-1{fill:none;}.cls-2{fill:#f8f8f9;}.cls-3{fill:#fff;}.cls-4{fill:#3766ae;}.cls-5{fill:#4777c0;}.cls-6{fill:#4aa4e3;}
-    .cls-7{fill:#61bafb;}.cls-8{fill:#d6eff0;}.cls-9{fill:#d0ebff;}.cls-10{fill:#6d828b;}.cls-11{fill:#ffe15f;}.cls-12{fill:#fc8777;}
-    .cls-13{fill:#f7acfe;}.cls-14{fill:#a8d0e6;}.cls-15{fill:#b1fafb;}.cls-16{fill:#f8e9a1;}.cls-17{clip-path:url(#clip-path);}.cls-18{fill:#efac8f;}
-    .cls-19{fill:#f0fbff;}.cls-20{fill:#8a1735;}.cls-21{fill:#e0a486;}.cls-22{fill:#c9eeff;}.cls-23{fill:#ffc49c;}.cls-24{fill:#665959;}.cls-25{fill:#534747;}
-    .cls-26{fill:#c86b56;}.cls-27{fill:#eefbff;}.cls-28{fill:#383349;}.cls-29{fill:#e6977c;}.cls-30{fill:#34485d;}.cls-31{fill:#ccd0d6;}.cls-32{fill:#f7f7f7;}
-    .cls-33{fill:#f2b891;}.cls-34{clip-path:url(#clip-path-2);}.cls-35{fill:#6e6060;}.cls-36{fill:#f09a43;}.cls-37{fill:#c6a589;}.cls-38{fill:#e3bf9c;}
-    .cls-39{fill:#d6b396;}.cls-40{clip-path:url(#clip-path-3);}.cls-41{fill:#7a8ba4;}.cls-42{fill:#e7ebe9;}.cls-43{fill:#4896b5;}.cls-44{fill:#38759a;}
-    .cls-45{clip-path:url(#clip-path-4);}.cls-46{fill:#4e4966;}.cls-47{fill:#876a64;}.cls-48{clip-path:url(#clip-path-5);}.cls-49{fill:#bcdce8;}
-    .cls-50{fill:#f5faff;}.cls-51{fill:#333b4d;}.cls-52{clip-path:url(#clip-path-6);}.cls-53{fill:#2a2e47;}.cls-54{fill:#3c4260;}.cls-55{fill:#1c1f2b;}
-    .cls-56{fill:#f0e9e2;}.cls-57{font-size:6px;fill:#333;font-family:RobotoSlab-Light, Roboto Slab;font-weight:300;}.cls-58{letter-spacing:-0.01em;}
-    .cls-59{letter-spacing:0em;}.cls-60{fill:#f7e8cb;}.cls-61{fill:#fcf2d6;}.cls-62{fill:#90b665;}.cls-63{fill:#719253;}.cls-64{fill:#e1d5c9;}.cls-65{fill:#d6ccc0;}
-    .cls-66{fill:#d45f36;}.cls-67{fill:#c95230;}.cls-68{fill:#8c643e;}.cls-69{fill:#7f5634;}.cls-70{fill:#ffe5bd;}.cls-71{fill:#313235;}.cls-72{fill:#3a3b3f;}
-    .cls-73{fill:#724b2d;}.cls-74{fill:#c18255;}.cls-75{fill:#c27156;}.cls-76{fill:#6d6a61;}.cls-77{fill:#5a5a5a;}
+    .cls-1,.cls-78,.cls-90{fill:none;}.cls-2{isolation:isolate;}.cls-3{fill:#d0ebff;}.cls-4{fill:#eeeef0;}.cls-22,.cls-5{fill:#fc8777;}
+    .cls-6{fill:#d6eff0;}.cls-13,.cls-15,.cls-7{opacity:0.75;}.cls-8{fill:#90b665;}.cls-9{fill:#a1d469;}.cls-10,.cls-15{mix-blend-mode:screen;}
+    .cls-11{fill:#404040;}.cls-12{fill:#a9b2bd;}.cls-13,.cls-20{mix-blend-mode:multiply;}.cls-14{fill:#e6e6e6;}.cls-16{fill:#595959;}.cls-17{fill:#95c461;}
+    .cls-18{fill:#c18255;}.cls-19{fill:#cdd0da;}.cls-21{fill:#6d828b;}.cls-22,.cls-23,.cls-89{stroke:#fff;}.cls-22,.cls-23,.cls-78,.cls-89,.cls-90{stroke-miterlimit:10;}
+    .cls-22,.cls-23{stroke-width:0.5px;}.cls-23,.cls-24,.cls-79,.cls-89{fill:#fff;}.cls-25{fill:#4aa4e3;}.cls-26{fill:#61bafb;}.cls-27{fill:#f7acfe;}.cls-28{fill:#a8d0e6;}
+    .cls-29{fill:#b1fafb;}.cls-30{fill:#f8e9a1;}.cls-31{clip-path:url(#clip-path);}.cls-32{fill:#efac8f;}.cls-33{fill:#f0fbff;}.cls-34{fill:#8a1735;}.cls-35{fill:#e0a486;}
+    .cls-36{fill:#c9eeff;}.cls-37{fill:#ffc49c;}.cls-38{fill:#665959;}.cls-39{fill:#534747;}.cls-40{fill:#c86b56;}.cls-41{fill:#eefbff;}.cls-42{fill:#383349;}
+    .cls-43{fill:#e6977c;}.cls-44{fill:#34485d;}.cls-45{fill:#ccd0d6;}.cls-46{fill:#f7f7f7;}.cls-47{fill:#f2b891;}.cls-48{clip-path:url(#clip-path-2);}
+    .cls-49{fill:#6e6060;}.cls-50{fill:#f09a43;}.cls-51{fill:#c6a589;}.cls-52{fill:#e3bf9c;}.cls-53{fill:#d6b396;}.cls-54{clip-path:url(#clip-path-3);}
+    .cls-55{fill:#7a8ba4;}.cls-56{fill:#e7ebe9;}.cls-57{fill:#4896b5;}.cls-58{fill:#38759a;}.cls-59{clip-path:url(#clip-path-4);}.cls-60{fill:#4e4966;}
+    .cls-61{fill:#876a64;}.cls-62{clip-path:url(#clip-path-5);}.cls-63{fill:#bcdce8;}.cls-64{fill:#f5faff;}.cls-65{fill:#333b4d;}.cls-66{clip-path:url(#clip-path-6);}
+    .cls-67{fill:#2a2e47;}.cls-68{fill:#3c4260;}.cls-69{fill:#1c1f2b;}.cls-70{fill:#f0e9e2;}.cls-71{font-size:6px;fill:#333;font-family:RobotoSlab-Light, Roboto Slab;font-weight:300;}
+    .cls-72{letter-spacing:-0.01em;}.cls-73{letter-spacing:0em;}.cls-74{fill:#eee;}.cls-75{fill:#3766ae;}.cls-76{fill:#4777c0;}.cls-77{fill:#c4314b;}.cls-78{stroke:#b3b3b3;}
+    .cls-78,.cls-89{stroke-width:0.25px;}.cls-79,.cls-82{font-size:3px;font-family:MyriadPro-Regular, Myriad Pro;}.cls-80{letter-spacing:-0.01em;}.cls-81{letter-spacing:-0.01em;}
+    .cls-82,.cls-87,.cls-88{fill:#aaa;}.cls-83{letter-spacing:0em;}.cls-84{letter-spacing:-0.01em;}.cls-85{letter-spacing:0em;}.cls-86{letter-spacing:-0.01em;}.cls-87{fill-rule:evenodd;}
+    .cls-90{stroke:#534741;}.cls-91{fill:#313235;}.cls-92{fill:#f7e8cb;}.cls-93{fill:#fcf2d6;}.cls-94{fill:#719253;}.cls-95{fill:#e1d5c9;}.cls-96{fill:#d6ccc0;}.cls-97{fill:#d45f36;}
+    .cls-98{fill:#c95230;}.cls-99{fill:#8c643e;}.cls-100{fill:#7f5634;}.cls-101{fill:#ffe5bd;}.cls-102{fill:#3a3b3f;}.cls-103{fill:#724b2d;}.cls-104{fill:#666;}.cls-105{fill:#4d4d4d;}
+    .cls-106{fill:#c27156;}.cls-107{fill:#6d6a61;}.cls-108{fill:#5a5a5a;}
+
+    #herosvg path:hover {
+        stroke: #4777c0;
+    }
 
     .supported div span {
         display: none;

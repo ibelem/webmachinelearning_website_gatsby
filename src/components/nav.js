@@ -8,8 +8,10 @@ export default function Nav() {
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
                 <button>
-                <span className="sr-only">Workflow</span>
-                <img className="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-blue.svg" alt="workflow" />
+                <span className="sr-only">WebNN</span>
+                <svg id="logo" className="h-8 w-auto sm:h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.53 138.63">
+                    <text class="logo-1" transform="translate(0 102.66)">WebNN</text>
+                </svg>
                 </button>
                 <div className="-mr-2 flex items-center md:hidden">
                 <button type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" id="main-menu" aria-haspopup="true">

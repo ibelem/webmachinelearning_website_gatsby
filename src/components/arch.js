@@ -71,7 +71,6 @@ export default function Arch() {
                             <polygon className="arc-4 nn" points="249.51 129.82 252.5 135 255.49 129.82 249.51 129.82" />
                             <path className="arc-18 nnpath" d="M205.5,124.5V130A2.47,2.47,0,0,0,208,132.5l155,1A2.52,2.52,0,0,1,365.5,136v3.71" transform="translate(-8 -9)" />
                             <polygon className="arc-4 nn" points="354.51 129.82 357.5 135 360.49 129.82 354.51 129.82" />
-                            
                             <path class="arc-18 gpupath" d="M152,67l-84.53.47a5,5,0,0,0-5,5V94.69" transform="translate(-8 -9)"/>
                             <polygon class="arc-4 gpu" points="51.51 84.82 54.5 90 57.49 84.82 51.51 84.82"/>
                             <path class="arc-18 wasmpath" d="M260,67l84.51.47a5,5,0,0,1,5,5v22.2" transform="translate(-8 -9)"/>
