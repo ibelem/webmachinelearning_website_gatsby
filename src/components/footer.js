@@ -1,13 +1,14 @@
 import React from "react"
+import { Link } from "gatsby"
 export default function Footer() {
   return ( 
     <footer className="footer text-white py-8 px-4">
         <div className="mx-auto max-w-7xl container overflow-hidden flex flex-col lg:flex-row justify-between">
-            <a href="/" className="block ml-10 mt-2 flogo">
+            <Link to="/" className="block ml-10 mt-2 flogo">
                 <svg className="logow h-8 sm:h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.53 138.63">
                 <text className="logo-1" transform="translate(0 102.66)">WebNN</text>
                 </svg>
-            </a>
+            </Link>
             <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0 flist">
                 <ul className="list-none p-0 flex flex-col text-left w-full">
                     <li className="inline-block py-2 font-light uppercase tracking-wide">Features</li>
@@ -17,16 +18,15 @@ export default function Footer() {
                     <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Benchmark</a></li>
                 </ul>
                 <ul className="list-none p-0 flex flex-col text-left w-full">
-                    <li className="inline-block py-2 font-light uppercase tracking-wide">Community</li>
-                    <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Blog</a></li>
-                    <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Specs</a>
-                    </li>
+                    <li><Link to="/community/" className="inline-block py-2 font-light uppercase tracking-wide">Community</Link></li>
+                    <li><Link to="/blog/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Blog</Link></li>
+                    <li><Link to="/spec/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Spec</Link></li>
                     <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">W3C Working Group</a></li>
-                    <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">FAQ</a></li>
+                    <li><Link to="/faq/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">FAQ</Link></li>
                 </ul>
                 <ul className="list-none p-0 flex flex-col text-left w-full">
                     <li className="inline-block py-2 font-light uppercase tracking-wide">Developers</li>
-                    <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Get Started</a></li>
+                    <li><Link to="/faq/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Get Started</Link></li>
                     <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Developer API</a></li>
                     <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Documentation</a></li>
                 </ul>

@@ -1,6 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
-import Header from "../components/header"
+import HeaderHome from "../components/headerhome"
 import Feature from "../components/feature"
 import Arch from "../components/arch"
 import Card from "../components/card"
@@ -13,7 +13,7 @@ export default function Home() {
       <Helmet title="Web Neural Network API" defer={false}>
         <script type="text/javascript" src="/belem.js"></script>
       </Helmet>
-      <Header />
+      <HeaderHome />
       <Feature />
       <Arch />
       <Card />

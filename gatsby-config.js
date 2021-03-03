@@ -7,6 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: `Web Neural Network API`,
+    description: `WebNN API: Accelerating deep neural networks on the web`
   },
   pathPrefix: "/webnn-website",
   plugins: [
@@ -18,7 +19,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extentions: [`.mdx`, `.md`],
+      }
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
