@@ -3,7 +3,7 @@ export default function Card() {
   return ( 
     <div className="pb-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
-            <div className="page-content grid-cols-3 grid justify-items-center">
+            <div className="page-content grid-cols-1 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2  grid justify-items-center">
                 <div className="card p-6 overflow-hidden">
                     <div className="content flex flex-col items-center">
                     <h2 className="title">

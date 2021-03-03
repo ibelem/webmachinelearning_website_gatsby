@@ -3,7 +3,7 @@ export default function SupportedPlatforms() {
   return ( 
     <div className="bg-nn-bgg1">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 lg:text-center">
-            <div className="supported py-10 grid-cols-10 gap-y-8 grid justify-items-center items-center">
+            <div className="supported py-10 grid-cols-4 lg:grid-cols-10 md:grid-cols-8 sm:grid-cols-6 gap-y-8 grid justify-items-center items-center">
                 <div>
                     <img alt="Chromium" className="h-12 w-12" src={'/img/supported/chromium.png'} />
                     <span className="block mt-2 bg-nn-t1 text-white text-sm">90</span> 

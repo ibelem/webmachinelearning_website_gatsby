@@ -8,7 +8,7 @@ export default function Header() {
       <div id="banner" className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-10">
           <Nav />
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             <HeroIntro />
             <HeroSVG />
           </div>

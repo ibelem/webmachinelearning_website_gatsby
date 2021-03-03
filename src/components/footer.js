@@ -3,12 +3,12 @@ export default function Footer() {
   return ( 
     <footer className="footer text-white py-8 px-4">
         <div className="mx-auto max-w-7xl container overflow-hidden flex flex-col lg:flex-row justify-between">
-            <a href="/" className="block ml-10 mt-2">
-                <svg id="logow" className="h-8 w-auto sm:h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.53 138.63">
-                <text class="logo-1" transform="translate(0 102.66)">WebNN</text>
+            <a href="/" className="block ml-10 mt-2 flogo">
+                <svg className="logow h-8 sm:h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.53 138.63">
+                <text className="logo-1" transform="translate(0 102.66)">WebNN</text>
                 </svg>
             </a>
-            <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0">
+            <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0 flist">
                 <ul className="list-none p-0 flex flex-col text-left w-full">
                     <li className="inline-block py-2 font-light uppercase tracking-wide">Features</li>
                     <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">WebNN Native</a></li>
@@ -30,7 +30,7 @@ export default function Footer() {
                     <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Developer API</a></li>
                     <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Documentation</a></li>
                 </ul>
-                <div className="flex flex-col w-full">
+                <div className="flex flex-col w-full followus">
                     <div className="inline-block py-2 px-3 font-light uppercase tracking-wide font-light">Follow Us</div>
                     <div className="flex pl-4 justify-start mt-2">
                         <a className="block flex items-center text-gray-100 hover:text-white mr-6 no-underline" href="#">

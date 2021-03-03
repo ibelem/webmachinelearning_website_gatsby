@@ -2,7 +2,7 @@ import React from "react"
 export default function Arch() {
     return (
         <div className="py-12 arch">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 justify-center items-center">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 justify-center items-center">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396 206">
                         <defs>
