@@ -107,14 +107,7 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-mdx/gatsby-ssr */ "./node_modules/gatsby-plugin-mdx/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "extensions": [".mdx"],
-    "defaultLayouts": {},
-    "gatsbyRemarkPlugins": [],
-    "lessBabel": false,
-    "remarkPlugins": [],
-    "rehypePlugins": [],
-    "mediaTypes": ["text/markdown", "text/x-markdown"],
-    "root": "/home/belem/github/webnn-website"
+    "extentions": [".mdx", ".md"]
   }
 }, {
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-react-helmet/gatsby-ssr */ "./node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js"),
