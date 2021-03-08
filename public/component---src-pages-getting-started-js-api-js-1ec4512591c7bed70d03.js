@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{"xh+D":function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return a}));var r=e("q1tI"),u=e.n(r);function a(){return u.a.createElement("div",null,u.a.createElement("h1",null,"GettingStarted JS API"))}}}]);
+//# sourceMappingURL=component---src-pages-getting-started-js-api-js-1ec4512591c7bed70d03.js.map
