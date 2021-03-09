@@ -1,7 +1,5 @@
 import React from "react"
 import Nav from "../components/nav"
-import HeroIntro from "../components/herointro"
-import HeroSVG from "../components/herosvg"
 export default function Header() {
   return ( 
     <div id="header" className="relative overflow-hidden">
