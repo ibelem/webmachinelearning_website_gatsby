@@ -14,7 +14,7 @@ module.exports = {
       twitter: `ibelem`,
     },
   },
-  pathPrefix: "/",
+  pathPrefix: "/webnn-website",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
