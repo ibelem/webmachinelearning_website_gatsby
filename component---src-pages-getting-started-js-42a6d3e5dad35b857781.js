@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{H2HR:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return a}));var r=e("q1tI"),u=e.n(r);function a(){return u.a.createElement("div",null,u.a.createElement("h1",null,"GettingStarted"))}}}]);
-//# sourceMappingURL=component---src-pages-getting-started-js-42a6d3e5dad35b857781.js.map
