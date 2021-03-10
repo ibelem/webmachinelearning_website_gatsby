@@ -5,6 +5,136 @@
 @layer utilities {
   body {
     font-family: 'Roboto Slab';
+    --webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+
+  /* .blog {
+    font-family: 'Roboto';
+  } */
+  
+  .bp {
+    letter-spacing: 0.025em;
+  }
+
+  .bp p {
+    margin: 1em 0;
+  }
+  
+  .bp h1,
+  .bp h2,
+  .bp h3 {
+    margin: 1em 0 .3em;
+  }
+  
+  .bp h1,
+  .bp h2,
+  .bp h3 {
+    font-weight: 500;
+  }
+
+  .bp h1 {
+    font-size: 2rem;
+  }
+
+  .bp h2 {
+    font-size: 1.5rem;
+  }
+
+  .bp h3 {
+    font-size: 1.1rem;
+  }
+  
+  .bp dt {
+    margin: 1em 0 0 0;
+    font-size: 130%;
+  }
+  
+  .bp dt:after {
+    content: ':';
+  }
+  
+  .bp dd {
+    margin-left: 2em;
+  }
+  
+  .bp strong {
+    font-weight: bold;
+  }
+  
+  .bp code, pre {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Lucida Console', monospace;
+    hyphens: none;
+  }
+  
+  .bp pre {
+    max-height: 30em;
+    overflow: auto;
+    font-size: 0.75rem;
+    border: 1px solid #eee;
+    color: #000;
+    padding: 0.75rem;
+    background: rgba(246, 248, 250);
+  }
+
+  .bp pre::-webkit-scrollbar {
+    height: 0px;
+    width: 5px;
+  }
+
+  .bp code {
+    background: rgba(246, 248, 250);
+    padding: 2px 8px;
+  }
+  
+  .bp pre > code.highlight {
+    outline: .4em solid red;
+    outline-offset: .4em;
+  }
+
+  .bp ul {
+    padding-left: 2em;
+    list-style-type: disc;
+  }
+
+  .bp ul li {
+    display: list-item;
+  }
+
+  .bp a:link, .bp a:visited, .bp a:active {
+    color: #4777c0;
+    text-decoration: underline #4777c0 1px;
+    text-decoration-style: dashed;
+    text-underline-offset: 4px;
+  }
+
+  .bp a:hover {
+    color: #61bafb;
+    text-decoration: underline #61bafb 1px;
+    text-underline-offset: 4px;
+  }
+
+  .bp table th {
+    font-weight: 500;
+  }
+
+  .bp table td, table th {
+    padding: 6px 13px;
+    border: 1px solid rgb(223, 226, 229);
+    border-collapse: collapse;
+  }
+
+  .bp table tr:nth-child(2n) {
+    background-color: rgb(246, 248, 250);
+  }
+
+  .bp blockquote {
+    padding-left: 1.2rem;
+    margin-bottom: 1.75rem;
+    line-height: 1.75rem;
+    color: #474c58;
+    font-style: italic;
+    border-left: 2px solid #474c58;
   }
 
   @variants hover, focus {
@@ -37,7 +167,7 @@
   .logo-1 {
     font-size: 120px;
     fill: #4777c0;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .logow .logo-1 {

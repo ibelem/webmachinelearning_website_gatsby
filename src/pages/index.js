@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Helmet title="Web Neural Network API" defer={false}>
-        <script type="text/javascript" src="/belem.js"></script>
+        {/* <script type="text/javascript" src="/belem.js"></script> */}
       </Helmet>
       <HeaderHome />
       <Feature />

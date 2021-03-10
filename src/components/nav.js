@@ -10,7 +10,7 @@ export default function Nav() {
                             <Link to="/">
                                 <span className="sr-only">WebNN</span>
                                 <svg className="logo h-8 w-auto sm:h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462.53 138.63">
-                                    <text class="logo-1" transform="translate(0 102.66)">WebNN</text>
+                                    <text className="logo-1" transform="translate(0 102.66)">WebNN</text>
                                 </svg>
                             </Link>
                             <div className="-mr-2 flex items-center md:hidden">
