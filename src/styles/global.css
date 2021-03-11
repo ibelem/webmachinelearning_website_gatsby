@@ -137,6 +137,10 @@
     border-left: 2px solid #474c58;
   }
 
+  .dpmenu {
+    z-index: 1000;
+  }
+
   @variants hover, focus {
     .filter-none {
       filter: none;

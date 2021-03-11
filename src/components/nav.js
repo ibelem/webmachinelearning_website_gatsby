@@ -1,14 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 
-let isdropdown = true
-
-export default function Nav(isdropdown) {
-    const dropdown = (isdropdown) => {
-        console.log(isdropdown)
-        isdropdown = !isdropdown
-        console.log(isdropdown)
-    }
+export default function Nav(n) {
+    let [ dropdown, toggleDropdown ] = useState(false)
     return (
         <div>
             <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
@@ -22,7 +16,7 @@ export default function Nav(isdropdown) {
                                 </svg>
                             </Link>
                             <div className="-mr-2 flex items-center md:hidden">
-                                <button type="button" onClick={ dropdown } className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" id="main-menu" aria-haspopup="true">
+                                <button type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" id="main-menu" aria-haspopup="true">
                                     <span className="sr-only">Open main menu</span>
                                     <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -51,7 +45,7 @@ export default function Nav(isdropdown) {
           From: "opacity-100 scale-100"
           To: "opacity-0 scale-95" */}
 
-            <div className={`absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden transition ease-${ isdropdown ? 'out' : 'in'} duration-${ isdropdown ? '150' : '100'} transform opacity-${ isdropdown ? '100' : '0'} scale-${ isdropdown ? '100' : '95'}`}>
+            <div className={`dpmenu absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden transition ease-${ dropdown ? 'out' : 'in'} duration-${ dropdown ? '150' : '100'} transform opacity-${ dropdown ? '100' : '0'} scale-${ dropdown ? '100' : '95'}`}>
                 <div className="shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div className="px-5 pt-4 flex items-center justify-between">
                         <div>
@@ -60,7 +54,7 @@ export default function Nav(isdropdown) {
                             </svg>
                         </div>
                         <div className="mr-2">
-                            <button onClick={ dropdown } type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                            <button onClick={ () => { if(dropdown) { toggleDropdown(false); } else { toggleDropdown(true); } dropdown = !dropdown; } } type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                                 <span className="sr-only">Close</span>
                                 <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
