@@ -18,10 +18,10 @@ class BlogPost extends React.Component {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 blog-index">
                 <div className="overflow-hidden w-full">
                   <div className="bg-white w-full p-4">
-                      <div className="text-gray-800 text-2xl font-medium mt-2 overflow-hidden overflow-ellipsis text-center">
+                      <div className="text-nn-t1 text-2xl font-medium mt-2 overflow-hidden overflow-ellipsis text-center">
                         {post.frontmatter.title}
                       </div>
-                      <div className="text-gray-400 text-center mb-4">
+                      <div className="text-nn-t2 text-center mb-4">
                                 {post.frontmatter.date}
                       </div>
                       <div className="bp">

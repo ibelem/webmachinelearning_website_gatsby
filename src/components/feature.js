@@ -4,7 +4,7 @@ export default function Feature() {
     <div className="py-10 bg-nn-bgg1">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-        <p className="text-3xl leading-8 tracking-tight text-nn-t1 sm:text-3xl">
+        <p className="text-2xl text-nn-t1 sm:text-2xl">
             Boosting deep learning inference performance 
         </p>
         <p className="mt-2 max-w-2xl text-nn-tgray1 lg:mx-auto font-light">

@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
                         <div key={node.fields.slug} className="overflow-hidden shadow-sm rounded-sm w-full cursor-pointer m-auto">
                           <Link to={node.fields.slug} className="w-full block h-full">
                               <div className="bg-white dark:bg-gray-800 w-full p-4">
-                                  <p className="text-gray-800 text-xl font-medium mb-2 h-6 overflow-hidden overflow-ellipsis">
+                                  <p className="text-nn-t1 text-xl font-medium mb-2 h-6 overflow-hidden overflow-ellipsis">
                                     {title}
                                   </p>
                                   <p dangerouslySetInnerHTML={{ __html: node.excerpt }} className="text-gray-400 dark:text-gray-300 font-light text-md">

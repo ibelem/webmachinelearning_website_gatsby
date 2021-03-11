@@ -1,7 +1,7 @@
 import React from "react"
 export default function Arch() {
     return (
-        <div className="py-12 arch">
+        <div className="py-6 arch">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 justify-center items-center">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 396 206">
@@ -78,7 +78,7 @@ export default function Arch() {
                         </g>
                     </svg>
                 </div>
-                <div className="place-self-center text-nn-tgray1 p-6">Web applications and frameworks including TensorFlow.js, <span className="ttt">ONNX.js</span>  can take advantage of the native operating system services for machine learning and the underlying hardware innovations available on the user's computers to implement consistent, efficient, and reliable AI experiences on the web platform.</div>
+                <div className="place-self-center text-nn-tgray1 p-6 font-light">Web applications and frameworks including TensorFlow.js, <span className="ttt">ONNX.js</span>  can take advantage of the native operating system services for machine learning and the underlying hardware innovations available on the user's computers to implement consistent, efficient, and reliable AI experiences on the web platform.</div>
             </div>
         </div>
     )
