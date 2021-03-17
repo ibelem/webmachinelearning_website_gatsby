@@ -15,7 +15,7 @@ export default function Nav(n) {
                                     <text className="logo-1" transform="translate(0 102.66)">WebNN</text>
                                 </svg>
                             </Link>
-                            <div className="-mr-2 flex items-center md:hidden">
+                            <div className="mr-2 flex items-center md:hidden">
                                 <button type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" id="main-menu" aria-haspopup="true">
                                     <span className="sr-only">Open main menu</span>
                                     <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -54,7 +54,7 @@ export default function Nav(n) {
                             </svg>
                         </div>
                         <div className="mr-2">
-                            <button onClick={ () => { if(dropdown) { toggleDropdown(false); } else { toggleDropdown(true); } dropdown = !dropdown; } } type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                            <button onClick={ () => { (dropdown) ? toggleDropdown(false) : toggleDropdown(true); dropdown = !dropdown; } } type="button" className="bg-white p-2 inline-flex items-center justify-center text-white-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                                 <span className="sr-only">Close</span>
                                 <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
