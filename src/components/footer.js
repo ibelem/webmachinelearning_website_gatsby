@@ -26,9 +26,9 @@ export default function Footer() {
                     </ul>
                     <ul className="list-none p-0 flex flex-col text-left w-full">
                         <li className="inline-block py-2 font-light uppercase tracking-wide">Developers</li>
-                        <li><Link to="/faq/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Get Started</Link></li>
+                        <li><Link to="/get-started/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Get Started</Link></li>
                         <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Developer API</a></li>
-                        <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Documentation</a></li>
+                        <li><Link to="/doc/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Documentation</Link></li>
                     </ul>
                     <div className="flex flex-col w-full followus">
                         <div className="inline-block py-2 px-3 font-light uppercase tracking-wide font-light">Follow Us</div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import Scrollspy from 'react-scrollspy'
-import Scollspy from 'react-scrollspy'
 
 export default function Toc(props) {
     const { post } = props

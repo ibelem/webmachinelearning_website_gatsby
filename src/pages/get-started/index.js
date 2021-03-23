@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import SEO from '../../components/seo'
 import Layout from '../../components/blogindexlayout'
 
-class BlogIndex extends React.Component {
+class GetStarted extends React.Component {
   render() {
     const { data } = this.props
     const posts = data.allMdx.edges
@@ -20,10 +20,10 @@ class BlogIndex extends React.Component {
                 <div className="header flex items-end justify-between mb-6">
                     <div className="title">
                         <p className="text-2xl text-gray-800">
-                            Blog
+                            Get Started
                     </p>
                         <p className="font-light text-gray-400">
-                            Get latest articles about WebNN API.
+                            Welcome to the Web Neural Network API documentation
                     </p>
                     </div>
                 </div>
@@ -39,19 +39,6 @@ class BlogIndex extends React.Component {
                                   </p>
                                   <p dangerouslySetInnerHTML={{ __html: node.excerpt }} className="text-gray-400 dark:text-gray-300 font-light text-md">
                                   </p>
-                                  <div className="flex items-center mt-4">
-                                      <span className="block relative">
-                                          <img alt="profil" src={node.frontmatter.avatar} className="mx-auto object-cover rounded-full h-10 w-10 " />
-                                      </span>
-                                      <div className="flex flex-col justify-between ml-4 text-sm">
-                                          <p className="text-gray-800">
-                                            { node.frontmatter.author }
-                                          </p>
-                                          <p className="text-gray-400">
-                                            { node.frontmatter.date }
-                                          </p>
-                                      </div>
-                                  </div>
                               </div>
                           </Link>
                         </div>
@@ -65,12 +52,12 @@ class BlogIndex extends React.Component {
     )
   }
 }
-export default BlogIndex
+export default GetStarted
 
 export const pageQuery = graphql`
   query {
     allMdx(sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { eq: "blog" } } } ) {
+      filter: { frontmatter: { tags: { eq: "getstarted" } } } ) {
       edges {
         node {
           excerpt

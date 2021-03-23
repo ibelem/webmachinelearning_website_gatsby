@@ -3,6 +3,7 @@ title: 'Call for Review: Web Machine Learning WG Charter'
 date: '2021-02-25T20:42:03.284Z'
 author: Xueyuan Jia
 avatar: https://avatars.githubusercontent.com/u/379216?s=200&v=4
+tags: blog
 ---
 
 Today W3C Advisory Committee Representatives received a Proposal
