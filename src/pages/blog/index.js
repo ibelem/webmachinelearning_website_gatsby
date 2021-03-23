@@ -16,7 +16,7 @@ class BlogIndex extends React.Component {
         />
         <Layout>
         <div className="py-6 bg-nn-bgg1">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 blog-index">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="header flex items-end justify-between mb-6">
                     <div className="title">
                         <p className="text-2xl text-gray-800">

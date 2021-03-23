@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../components/blogindexlayout'
 import SEO from '../components/seo'
+import Toc from '../components/toc'
 
 class BlogPost extends React.Component {
   render() {
@@ -14,8 +15,9 @@ class BlogPost extends React.Component {
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
 
-        <div className="pb-6 blog text-nn-tgray1">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 blog-index">
+        <div className="pb-6 blog text-nn-tgray1 grid grid-cols-1 md:grid-cols-4">
+            <div className="mx-auto mt-8 col-span-1">doc list</div>
+            <div className="col-span-1 md:col-span-2 mx-auto px-4 sm:px-6 lg:px-6">
                 <div className="overflow-hidden w-full">
                   <div className="bg-white w-full p-4">
                       <div className="text-nn-t1 text-2xl font-medium mt-2 overflow-hidden overflow-ellipsis text-center">
@@ -61,6 +63,9 @@ class BlogPost extends React.Component {
                   </ul>
                 </div>
             </div>
+            <div className="mx-auto mt-8 col-span-1">
+              {!!post.tableOfContents.items && <Toc post={post.tableOfContents} />}
+            </div>
         </div>
       </Layout>
     )
@@ -80,6 +85,7 @@ export const pageQuery = graphql`
     mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
+      tableOfContents
       frontmatter {
         date(formatString: "dddd, MMMM DD, YYYY")
         title

@@ -101,14 +101,14 @@
     display: list-item;
   }
 
-  .bp a:link, .bp a:visited, .bp a:active {
+  .bp a:link, .bp a:visited, .bp a:active, .toc a:link, .toc a:visited, .toc a:active {
     color: #4777c0;
     text-decoration: underline #4777c0 1px;
     text-decoration-style: dashed;
     text-underline-offset: 4px;
   }
 
-  .bp a:hover {
+  .bp a:hover, .toc a:hover {
     color: #61bafb;
     text-decoration: underline #61bafb 1px;
     text-underline-offset: 4px;
@@ -986,4 +986,44 @@
       width: 100%;
     }
   }
+
+  .bp pre {
+    max-width: 50vw;
+  }
+
+  .toc { 
+    position: fixed;
+    width: 100%;
+    right: 5vw;
+    max-width: 250px;
+  }
+
+  .toc nav {
+    margin-top: 12px;
+  }
+
+  .toc  ul.toc-list {
+    border-left: 1px solid #f2f5fb;
+  }
+
+  .toc ul.toc-list > li {
+    list-style-type: none;
+    margin-left: 12px;
+    font-size: 0.8rem;
+  }
+
+  .toc ul.toc-list > li > a {
+    border-bottom: 0;
+    display: inline-block;
+    padding: 2px 10px 8px 10px;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .toc ul.toc-list > li.is-current > a {
+    font-weight: 800;
+    color: #fff;
+    background-color: #61bafb;
+    text-decoration: underline #fff 1px;
+  }
+ 
 }
