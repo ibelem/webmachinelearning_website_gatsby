@@ -1025,5 +1025,62 @@
     background-color: #61bafb;
     text-decoration: underline #fff 1px;
   }
+
+  .gs-browser {
+    background-image: url(https://placeimg.com/480/480/any);
+  }
+
+  @keyframes gsgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .gs-browser-web {
+    background: linear-gradient(-45deg, #62d3fd, #4777c0);
+    background-size: 400% 400%;
+    animation: gsgradient 10s ease infinite;
+  }
+
+  .gs-browser-node {
+    background: linear-gradient(-45deg, #f76c6c,  #ffd42b);
+    background-size: 400% 400%;
+    animation: gsgradient 10s ease infinite;
+  }
+
+  .gs-browser-wechat {
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gsgradient 10s ease infinite;
+  }
+
+  .gs-l {
+    border: 1px solid #eee;
+  }
+
+  .gs-ul {
+    list-style-position: outside;
+    display: inline-block;
+  }
+
+  .gs-li:hover svg {
+    color: #61bafb;
+  }
+
+  .gs-link {
+    color: #4777c0;
+  }
+
+  .gs-link:hover {
+    color: #61bafb;
+    text-decoration: underline #61bafb 1px;
+    text-underline-offset: 2px;
+  }
  
 }

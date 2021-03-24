@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "gatsby"
+
 export default function HeroIntro() {
   return ( 
     <div>
@@ -15,7 +17,7 @@ export default function HeroIntro() {
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="shadow">
-                <button className="button button--atlas getstarted w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 text-white md:py-3 md:text-sm md:px-10 md:leading-4">
+                <Link to="/get-started/" className="button button--atlas getstarted w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-4 text-white md:py-3 md:text-sm md:px-10 md:leading-4">
                     <span>Get Started</span>
                     <div className="marquee" aria-hidden="true">
                     <div className="marquee__inner">
@@ -25,7 +27,7 @@ export default function HeroIntro() {
                         <span>Get Started</span>
                     </div>
                     </div>
-                </button>
+                </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                 <button className="button button--mimas w-full flex items-center justify-center px-8 py-3 border border-color-nn-tgray1 text-base leading-6 text-nn-tgray1 hover:text-nn-t1 hover:border-nn-t1 md:py-3 md:text-base md:px-10 md:leading-4">
