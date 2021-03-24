@@ -11,8 +11,8 @@ class DocIndex extends React.Component {
     return (
       <div>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `WebNN`, `WebNN API`, `Web Neural Networks`, `Web Machine Learning`]}
+          title="Documentation"
+          keywords={[`Documentation`, `WebNN`, `WebNN API`, `Web Neural Networks`, `Web Machine Learning`]}
         />
         <Layout>
         <div className="py-6 bg-nn-bgg1">

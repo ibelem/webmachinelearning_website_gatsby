@@ -62,6 +62,7 @@
     font-weight: bold;
   }
   
+  /* 
   .bp code, pre {
     font-family: Consolas, Monaco, 'Andale Mono', 'Lucida Console', monospace;
     hyphens: none;
@@ -90,7 +91,7 @@
   .bp pre > code.highlight {
     outline: .4em solid red;
     outline-offset: .4em;
-  }
+  } */
 
   .bp ul {
     padding-left: 2em;
@@ -105,13 +106,13 @@
     color: #4777c0;
     text-decoration: underline #4777c0 1px;
     text-decoration-style: dashed;
-    text-underline-offset: 4px;
+    text-underline-offset: 2px;
   }
 
   .bp a:hover, .toc a:hover {
     color: #61bafb;
     text-decoration: underline #61bafb 1px;
-    text-underline-offset: 4px;
+    text-underline-offset: 2px;
   }
 
   .bp table th {
@@ -1021,9 +1022,8 @@
 
   .toc ul.toc-list > li.is-current > a {
     font-weight: 800;
-    color: #fff;
-    background-color: #61bafb;
-    text-decoration: underline #fff 1px;
+    color: #61bafb;
+    text-decoration: underline #61bafb 1px;
   }
 
   .gs-browser {
