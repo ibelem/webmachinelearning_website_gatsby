@@ -1,5 +1,5 @@
 ---
-title: Get Started with Node.js / Electron.js
+title: Noise Suppression Net 2 (NSNet2)
 author: Anssi, Chai and Ningxin 
 avatar: https://avatars.githubusercontent.com/u/379216?s=200&v=4
 date: '2020-05-02T23:46:37.121Z'
@@ -16,7 +16,7 @@ This [example](https://webmachinelearning.github.io/webnn/#examples) builds, com
 
 There are many important [application use cases](https://webmachinelearning.github.io/webnn/#usecases-application) for high-performance neural network inference. One such use case is deep-learning noise suppression (DNS) in web-based video conferencing. The following sample shows how the [NSNet2](https://github.com/microsoft/DNS-Challenge/tree/master/NSNet2-baseline) baseline implementation of deep learning-based noise suppression model may be implemented using the WebNN API.
 
-```JavaScript
+```JavaScript{2}
 // Noise Suppression Net 2 (NSNet2) Baseline Model for Deep Noise Suppression Challenge (DNS) 2021.
 export class NSNet2 {
   constructor() {

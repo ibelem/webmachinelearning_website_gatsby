@@ -14,11 +14,33 @@ export const Code = ({ codeString, language, ...props }) => {
     )
   } else {
     return (
-      <Highlight {...defaultProps} code={codeString} language={language}>
+      <Highlight
+        {...defaultProps}
+        code={codeString}
+        language={language}
+        theme={dracula}
+      >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
-          <pre className={className} style={style}>
+          <pre
+            className={className}
+            style={{
+              ...style,
+              padding: "2rem",
+              position: "relative",
+            }}
+          >
+            <Button
+              onClick={() => {
+                copyToClipboard(codeString)
+                setIsCopied(true)
+                setTimeout(() => setIsCopied(false), 3000)
+              }}
+            >
+              {isCopied ? "🎉 Copied!" : "Copy"}
+            </Button>
+ 
             {tokens.map((line, i) => (
-              <div {...getLineProps({ line, key: i })}>
+              <div {...getLineProps({ line, key: i })} style={style}>
                 {line.map((token, key) => (
                   <span {...getTokenProps({ token, key })} />
                 ))}

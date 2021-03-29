@@ -61,37 +61,6 @@
   .bp strong {
     font-weight: bold;
   }
-  
-  /* 
-  .bp code, pre {
-    font-family: Consolas, Monaco, 'Andale Mono', 'Lucida Console', monospace;
-    hyphens: none;
-  }
-  
-  .bp pre {
-    max-height: 30em;
-    overflow: auto;
-    font-size: 0.75rem;
-    border: 1px solid #eee;
-    color: #000;
-    padding: 0.75rem;
-    background: rgba(246, 248, 250);
-  }
-
-  .bp pre::-webkit-scrollbar {
-    height: 0px;
-    width: 5px;
-  }
-
-  .bp code {
-    background: rgba(246, 248, 250);
-    padding: 2px 8px;
-  }
-  
-  .bp pre > code.highlight {
-    outline: .4em solid red;
-    outline-offset: .4em;
-  } */
 
   .bp ul {
     padding-left: 2em;
@@ -994,9 +963,6 @@
 
   .toc { 
     position: fixed;
-    width: 100%;
-    right: 5vw;
-    max-width: 250px;
   }
 
   .toc nav {
@@ -1009,14 +975,14 @@
 
   .toc ul.toc-list > li {
     list-style-type: none;
-    margin-left: 12px;
+    margin-left: 10px;
     font-size: 0.8rem;
   }
 
   .toc ul.toc-list > li > a {
     border-bottom: 0;
     display: inline-block;
-    padding: 2px 10px 8px 10px;
+    padding: 0px 8px 4px 8px;
     transition: 0.5s all ease-in-out;
   }
 

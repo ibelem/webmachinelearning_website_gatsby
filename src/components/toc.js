@@ -1,24 +1,35 @@
-import React from 'react'
+import React from "react";
 import Scrollspy from 'react-scrollspy'
 
-export default function Toc(props) {
-    const { post } = props
-    console.log(post)
-    let url = post.items.map(function(post) {
-        return post['url'].substring(1)
+function renderItems(items, url) {
+    return (
+        <Scrollspy items={url} currentClassName="is-current" className="toc-list">
+            {items.map((item) => {
+                return (
+                    <li key={item.url}>
+                        <a href={item.url}>
+                            {item.title}
+                        </a>
+                        {item.items && renderItems(item.items)}
+                    </li>
+                );
+            })}
+        </Scrollspy>
+    );
+}
+
+function Toc(props) {
+    let url = props.items.map((item) => {
+        return item.url.substring(1)
     })
     return (
         <div className="toc">
             <h3 className="uppercase tracking-wider font-light text-xs">Table of Content</h3>
             <nav>
-                <Scrollspy items={url} currentClassName="is-current" className="toc-list">
-                {post.items.map(p => (
-                    <li key={p.url}>
-                        <a href={p.url}>{p.title}</a>
-                    </li>
-                ))}
-                </Scrollspy>
+                {renderItems(props.items, url)}
             </nav>
         </div>
-    )
+    );
 }
+
+export default Toc

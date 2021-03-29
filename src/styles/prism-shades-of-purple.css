@@ -13,7 +13,7 @@
 
  code[class*='language-'],
  pre[class*='language-'] {
-     color: #9efeff;
+     color: #36313d;
      direction: ltr;
      text-align: left;
      white-space: pre;
@@ -34,7 +34,6 @@
      font-size: 0.75rem;
      line-height: 1.05rem;
      letter-spacing: 0.5px;
-     text-shadow: 0 1px #222245;
  }
  
  pre[class*='language-']::-moz-selection,
@@ -58,7 +57,7 @@
  
  :not(pre) > code[class*='language-'],
  pre[class*='language-'] {
-     background: #1e1e3f;
+     background: #fdfaf6;
  }
  
  /* Inline code */
@@ -75,7 +74,7 @@
  .token.comment,
  .token.prolog,
  .token.cdata {
-     color: #b362ff;
+     color: #527713;
  }
  
  .token.delimiter,
@@ -83,7 +82,7 @@
  .token.selector,
  .token.important,
  .token.atrule {
-     color: #ff9d00;
+     color: #1a7886;
  }
  
  .token.operator,
@@ -92,7 +91,7 @@
  }
  
  .token.punctuation {
-     color: #ffffff;
+     color: #36313d;
  }
  
  .token.boolean {
@@ -123,7 +122,7 @@
  
  .token.string,
  .token.char {
-     color: #a5ff90;
+     color: #3abca3;
  }
  
  .token.attr-value,
@@ -141,7 +140,7 @@
  }
  
  .token.function {
-     color: rgb(250, 208, 0);
+     color: #b94185;
  }
  
  .token.regex {
@@ -157,7 +156,7 @@
  }
  
  .token.inserted {
-     background: #00ff00;
+     background: #374785;
  }
  
  .token.deleted {
@@ -205,4 +204,54 @@
  pre > code.line-highlight[data-end]:after {
      content: '';
  }
+
+ .gatsby-highlight-code-line {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+
+  .gatsby-highlight {
+    background-color: #fdfaf6;
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+  }
+
+  .gatsby-highlight pre[class*="language-"] {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    float: left; /* 1 */
+    min-width: 100%; /* 2 */
+  }
  
+.gatsby-highlight pre[class*="language-"].line-numbers {
+    padding-left: 2.8em;
+  }
+
+  .gatsby-highlight {
+    background-color: #fdfaf6;
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+  }
+  
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
+
+  .gatsby-highlight::-webkit-scrollbar,
+  .gatsby-highlight::-webkit-scrollbar {
+     height: 3px;
+     width: 3px;
+  }
