@@ -45,3 +45,13 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     return {
       codeString: t,
 ```
+
+### node_modules/prism-react-renderer/dist/index.js
+
+``` 
+    try {
+        tokenArrSizeStack.push(content.length);
+    } catch (ex) {
+        console.log(ex);
+    }
+``` 
