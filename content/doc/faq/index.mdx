@@ -1,12 +1,12 @@
 ---
-title: FAQ & Web Neural Network API Explained
+title: FAQ and Web Neural Network API Explained
 author: Anssi, Chai and Ningxin 
 avatar: https://avatars.githubusercontent.com/u/379216?s=200&v=4
 date: '2021-03-03T23:46:37.121Z'
 tags: faq
 ---
 
-## What’s all this then?
+## What is all this then?
 
 [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) (ML) is a branch of [Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence). A subfield of ML called [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning) with its various neural network architectures enables new compelling user experiences for web applications. Use cases range from improved video conferencing to accessibility-improving features, with potential improved privacy over cloud-based solutions. Some common use cases that apply to a wide range of web applications include e.g.:
 
@@ -36,7 +36,7 @@ At the heart of neural networks is a computational graph of mathematical operati
 
 The WebNN API is a specification for constructing and executing computational graphs of neural networks. It provides web applications with the ability to create, compile, and run machine learning networks on the web browsers. The WebNN API may be implemented in web browsers using the available native operating system machine learning APIs for the best performance and reliability of results. The following code sample illustrates a simple usage of this API.
 
-``` JavaScript
+```JavaScript
 const operandType = {type: 'float32', dimensions: [2, 2]};
 const context = navigator.ml.getNeuralNetworkContext();
 const builder = context.createModelBuilder();

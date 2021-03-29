@@ -31,7 +31,7 @@ export default function Nav(n) {
                         <Link to="/performance/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Performance</Link>
                         <Link to="/blog/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Blog</Link>
                         <Link to="/community/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Community</Link>
-                        <Link to="/faq/" className="link link--dia bg-nn-t1a text-white py-1 rounded-sm px-4 hover:bg-nn-t2a">FAQ</Link>
+                        <Link to="/faq" className="link link--dia bg-nn-t1a text-white py-1 rounded-sm px-4 hover:bg-nn-t2a">FAQ</Link>
                     </div>
                 </nav>
             </div>

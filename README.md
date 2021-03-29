@@ -27,3 +27,21 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json
     └── README.md
  
+ ## Bug Fix
+
+ ### node_modules/mdx-utils/index.js
+
+ WebpackError: TypeError: codeString.trim is not a function
+ 
+``` 
+    let t = codeString
+
+    try {
+      t = t.trim()
+    } catch (ex) {
+      console.log(ex)
+    }
+
+    return {
+      codeString: t,
+```

@@ -1,4 +1,5 @@
 import React from 'react'
+// import Button from 'gatsby'
 import { render } from 'react-dom'
 import Highlight, { defaultProps } from 'prism-react-renderer'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
@@ -18,7 +19,6 @@ export const Code = ({ codeString, language, ...props }) => {
         {...defaultProps}
         code={codeString}
         language={language}
-        theme={dracula}
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
           <pre
@@ -29,7 +29,7 @@ export const Code = ({ codeString, language, ...props }) => {
               position: "relative",
             }}
           >
-            <Button
+            {/* <Button
               onClick={() => {
                 copyToClipboard(codeString)
                 setIsCopied(true)
@@ -37,7 +37,7 @@ export const Code = ({ codeString, language, ...props }) => {
               }}
             >
               {isCopied ? "🎉 Copied!" : "Copy"}
-            </Button>
+            </Button> */}
  
             {tokens.map((line, i) => (
               <div {...getLineProps({ line, key: i })} style={style}>

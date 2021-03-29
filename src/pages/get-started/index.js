@@ -62,7 +62,7 @@ class GetStarted extends React.Component {
                                 <div className="flex justify-between items-center ml-4">
                                     <div className="border text-white px-2 py-1 mt-2 flex items-center font-bold text-sm">MiniApps</div>
                                     <div className="w-14 h-14 flex flex-col-reverse">
-                                        <img className="w-12 h-12" src={weixin_white} />
+                                        <img className="w-12 h-12" src={weixin_white} alt="MiniApps" />
                                     </div>
                                 </div>
                                 <div className="px-4 flex flex-col mr-4 mb-2">
