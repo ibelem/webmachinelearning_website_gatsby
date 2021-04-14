@@ -963,6 +963,7 @@
 
   .toc { 
     position: fixed;
+    margin-right: 6rem;
   }
 
   .toc nav {

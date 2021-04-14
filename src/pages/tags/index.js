@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 
 import SEO from '../../components/seo'
-import Layout from '../../components/blogindexlayout'
+import Layout from '../../components/layout'
 
 export const query = graphql`
   query {

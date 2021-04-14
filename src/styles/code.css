@@ -1,0 +1,9 @@
+
+  .prism-code {
+    font-size: 0.85rem;
+    padding: 1rem !important;
+  }
+
+  .prism-code, .token-line {
+    background-color: #fdfaf6 !important;
+  }

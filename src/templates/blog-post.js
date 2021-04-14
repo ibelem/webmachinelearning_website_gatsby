@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import Layout from '../components/blogindexlayout'
+import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Toc from '../components/toc'
 
