@@ -7,19 +7,90 @@ import Toc from '../components/toc'
 
 class BlogPost extends React.Component {
   render() {
-    const post = this.props.data.mdx
+    const { data } = this.props
+
+    const post = data.dtl
     const { previous, next } = this.props.pageContext
-    console.log(this.props.pageContext)
+    
+    const postweb = this.props.data.web.edges
+    const postblog = this.props.data.blog.edges
+    const postdoc = this.props.data.doc.edges
+    const postfaq = this.props.data.faq.edges
 
     return (
       <Layout>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
 
-        <div className="pb-6 blog text-nn-tgray1 grid grid-cols-1 md:grid-cols-4">
-            <div className="mmt-8 col-span-1">doc list</div>
-            <div className="col-span-1 md:col-span-2 px-4 sm:px-6 lg:px-6">
+        <div className="pb-6 blog text-nn-tgray1 grid grid-cols-1 md:grid-cols-5">
+            <div className="col-span-1 justify-self-end frame">
+
+              <div className="sbdocs">
+                <h3 className="uppercase tracking-wider font-light text-xs">Get Started (Web)</h3>
+                <nav>
+                    <ul>
+                    {   
+                      postweb.map(({ node }, index) => {
+                        const title = node.frontmatter.title
+                        const link = node.fields.slug
+                        return (
+                          <li><Link to={link} className="">{title}</Link></li>
+                        )
+                      })
+                    }
+                    </ul>
+                </nav>
+
+                <h3 className="uppercase tracking-wider font-light text-xs">Blog</h3>
+                <nav>
+                    <ul>
+                    {   
+                      postblog.map(({ node }, index) => {
+                        const title = node.frontmatter.title
+                        const link = node.fields.slug
+                        return (
+                          <li><Link to={link} className="">{title}</Link></li>
+                        )
+                      })
+                    }
+                    </ul>
+                </nav>
+
+                <h3 className="uppercase tracking-wider font-light text-xs">Documentation</h3>
+                <nav>
+                    <ul>
+                    {   
+                      postdoc.map(({ node }, index) => {
+                        const title = node.frontmatter.title
+                        const link = node.fields.slug
+                        return (
+                          <li><Link to={link} className="">{title}</Link></li>
+                        )
+                      })
+                    }
+                    </ul>
+                </nav>
+
+                <h3 className="uppercase tracking-wider font-light text-xs">FAQ</h3>
+                <nav className="navlast">
+                    <ul>
+                    {   
+                      postfaq.map(({ node }, index) => {
+                        const title = node.frontmatter.title
+                        const link = node.fields.slug
+                        return (
+                          <li><Link to={link} className="">{title}</Link></li>
+                        )
+                      })
+                    }
+                    </ul>
+                </nav>
+              </div>
+
+              
+            </div>
+            <div className="col-span-1 md:col-span-3 px-4 sm:px-6 lg:px-6">
                 <div className="overflow-hidden w-full">
-                  <div className="bg-white w-full p-4">
+                  <div className="bg-white w-full">
                       <div className="text-nn-t1 text-2xl font-medium mt-2 overflow-hidden overflow-ellipsis text-center">
                         {post.frontmatter.title}
                       </div>
@@ -43,7 +114,7 @@ class BlogPost extends React.Component {
                           </div>
                       </div>
                   </div>
-                  <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                  <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 text-sm">
                         <li className="md:col-start-1 md:col-end-1">
                           {previous && (
                             <Link to={previous.fields.slug} className="text-nn-t1 hover:text-nn-t2" rel="prev">
@@ -63,7 +134,7 @@ class BlogPost extends React.Component {
                   </ul>
                 </div>
             </div>
-            <div className="mt-8 col-span-1">
+            <div className="col-span-1 frame">
               {!!post.tableOfContents.items && <Toc items={post.tableOfContents.items} />}
             </div>
         </div>
@@ -82,7 +153,7 @@ export const pageQuery = graphql`
         author
       }
     }
-    mdx(fields: { slug: { eq: $slug } }) {
+    dtl: mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
       tableOfContents
@@ -91,8 +162,99 @@ export const pageQuery = graphql`
         title
         avatar
         author
+        tags
       }
       body
     }
+    web: allMdx(
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {tags: {eq: "getstarted-web"}}}
+  ) {
+      edges {
+      node {
+          fields {
+          slug
+          }
+          frontmatter {
+          title
+          }
+      }
+      }
+  }
+      node: allMdx(
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {tags: {eq: "getstarted-node"}}}
+  ) {
+      edges {
+      node {
+          fields {
+          slug
+          }
+          frontmatter {
+          title
+          }
+      }
+      }
+  }
+      miniapp: allMdx(
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {tags: {eq: "getstarted-miniapp"}}}
+  ) {
+      edges {
+      node {
+          fields {
+          slug
+          }
+          frontmatter {
+          title
+          }
+      }
+      }
+  }
+      blog: allMdx(
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {tags: {eq: "blog"}}}
+  ) {
+      edges {
+      node {
+          fields {
+          slug
+          }
+          frontmatter {
+          title
+          }
+      }
+      }
+  }
+  doc: allMdx(
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {tags: {eq: "doc"}}}
+  ) {
+      edges {
+      node {
+          fields {
+          slug
+          }
+          frontmatter {
+          title
+          }
+      }
+      }
+  }
+  faq: allMdx(
+    sort: {fields: [frontmatter___date], order: DESC}
+    filter: {frontmatter: {tags: {eq: "faq"}}}
+) {
+    edges {
+    node {
+        fields {
+        slug
+        }
+        frontmatter {
+        title
+        }
+    }
+    }
+  }
   }
 `

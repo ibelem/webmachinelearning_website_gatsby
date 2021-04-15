@@ -30,9 +30,9 @@ export default function HeroIntro() {
                 </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                <button className="button button--mimas w-full flex items-center justify-center px-8 py-3 border border-color-nn-tgray1 text-base leading-6 text-nn-tgray1 hover:text-nn-t1 hover:border-nn-t1 md:py-3 md:text-base md:px-10 md:leading-4">
+                <Link to="/demo/" className="button button--mimas w-full flex items-center justify-center px-8 py-3 border border-color-nn-tgray1 text-base leading-6 text-nn-tgray1 hover:text-nn-t1 hover:border-nn-t1 md:py-3 md:text-base md:px-10 md:leading-4">
                     Demo
-                </button>
+                </Link>
                 </div>
             </div>
             </div>

@@ -13,9 +13,9 @@ export default function Footer() {
                     <ul className="list-none p-0 flex flex-col text-left w-full">
                         <li className="inline-block py-2 font-light uppercase tracking-wide">Features</li>
                         <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">WebNN Native</a></li>
-                        <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Demo</a></li>
-                        <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Performance</a></li>
-                        <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Benchmark</a></li>
+                        <li><Link to="/demo/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Demo</Link></li>
+                        <li><Link to="/performance/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Performance</Link></li>
+                        <li><Link to="/benchmark/"  className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Benchmark</Link></li>
                     </ul>
                     <ul className="list-none p-0 flex flex-col text-left w-full">
                         <li><Link to="/community/" className="inline-block py-2 font-light uppercase tracking-wide">Community</Link></li>

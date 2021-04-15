@@ -66,6 +66,7 @@ const Button = props => (
       fontSize: '12px',
       textTransform: 'uppercase'
     }}
+    className="copybtn"
     {...props}
   />
 )

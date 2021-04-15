@@ -14,7 +14,7 @@
   } */
   
   .bp {
-    letter-spacing: 0.025em;
+    /* letter-spacing: 0.025em; */
   }
 
   .bp p {
@@ -42,7 +42,7 @@
   }
 
   .bp h3 {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
   
   .bp dt {
@@ -71,14 +71,14 @@
     display: list-item;
   }
 
-  .bp a:link, .bp a:visited, .bp a:active, .toc a:link, .toc a:visited, .toc a:active {
+  .bp a:link, .bp a:visited, .bp a:active {
     color: #4777c0;
     text-decoration: underline #4777c0 1px;
     text-decoration-style: dashed;
     text-underline-offset: 2px;
   }
 
-  .bp a:hover, .toc a:hover {
+  .bp a:hover {
     color: #61bafb;
     text-decoration: underline #61bafb 1px;
     text-underline-offset: 2px;
@@ -957,41 +957,93 @@
     }
   }
 
-  .bp pre {
-    max-width: 50vw;
+  .frame {
+    width: 100%;
+    padding: 1rem;
   }
 
   .toc { 
     position: fixed;
-    margin-right: 6rem;
+    padding: 1rem 2rem 1 rem 1rem;
   }
 
   .toc nav {
     margin-top: 12px;
   }
 
-  .toc  ul.toc-list {
+  .toc ul.toc-list {
     border-left: 1px solid #f2f5fb;
+  }
+
+  .toc ul {
+    margin-right: 2rem;
   }
 
   .toc ul.toc-list > li {
     list-style-type: none;
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 0.8rem;
+    width: 100%;
+    display: block;
   }
 
   .toc ul.toc-list > li > a {
     border-bottom: 0;
-    display: inline-block;
-    padding: 0px 8px 4px 8px;
-    transition: 0.5s all ease-in-out;
+    display: block;
+    padding: 2px 8px 4px 8px;
+    transition: 0.2s all ease-in-out;
   }
 
   .toc ul.toc-list > li.is-current > a {
     font-weight: 800;
-    color: #61bafb;
-    text-decoration: underline #61bafb 1px;
+    color: #4777c0;
   }
+
+  .toc a:hover {
+    background-color: #4777c0;
+    color: #fff;
+  }
+
+  .toc a:active {
+    color: #4777c0;
+    text-decoration: none #4777c0 1px;
+  }
+
+  .sbdocs {
+    padding-left: 1rem;
+    background: linear-gradient(-45deg, #62d3fd, #4777c0);
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .sbdocs nav {
+    margin: 12px 0;
+  }
+
+  .navlast {
+    margin-bottom: 0 !important;
+  }
+
+  .sbdocs ul li {
+    border-left: 1px solid #f2f5fb;
+  }
+
+  .sbdocs ul li {
+    font-size: 0.8rem;
+    width: 100%;
+    display: block;
+  }
+
+  .sbdocs ul li a {
+    padding: 2px 8px 4px 8px;
+    display: block;
+  }
+
+  .sbdocs ul li a:hover {
+    background-color: #4777c0;
+    color: #fff;
+  }
+
 
   .gs-browser {
     background-image: url(https://placeimg.com/480/480/any);
