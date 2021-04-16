@@ -999,14 +999,14 @@
     color: #4777c0;
   }
 
-  .toc a:hover {
-    background-color: #4777c0;
-    color: #fff;
-  }
-
   .toc a:active {
     color: #4777c0;
     text-decoration: none #4777c0 1px;
+  }
+
+  .toc a:hover {
+    background-color: #4777c0;
+    color: #fff !important;
   }
 
   .sbdocs {
@@ -1014,6 +1014,11 @@
     background: linear-gradient(-45deg, #62d3fd, #4777c0);
     color: #fff;
     padding: 1rem;
+    border-radius: 3px;
+  }
+
+  .faq {
+    border-radius: 3px;
   }
 
   .sbdocs nav {
