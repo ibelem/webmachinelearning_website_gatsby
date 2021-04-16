@@ -19,7 +19,7 @@ import t360 from "../../content/assets/supported/360.png"
 
 export default function SupportedPlatforms() {
   return ( 
-    <div className="bg-nn-bgg1">
+    <div className="">
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 lg:text-center">
             <div className="supported py-10 grid-cols-4 lg:grid-cols-10 md:grid-cols-8 sm:grid-cols-6 gap-y-8 grid justify-items-center items-center">
                 <div>

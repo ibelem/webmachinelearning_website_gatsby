@@ -24,7 +24,7 @@ function Toc(props) {
     })
     return (
         <div className="toc">
-            <h3 className="uppercase tracking-wider font-light text-xs">Table of Content</h3>
+            <h3 className="uppercase font-light text-xs">Table of Content</h3>
             <nav>
                 {renderItems(props.items, url)}
             </nav>

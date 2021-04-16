@@ -27,7 +27,7 @@ export default function Nav(n) {
                     </div>
                     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                         <Link to="/get-started/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Get Started</Link>
-                        <Link to="/specs/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Spec</Link>
+                        <Link to="/demo/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Demo</Link>
                         <Link to="/performance/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Performance</Link>
                         <Link to="/blog/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Blog</Link>
                         <Link to="/community/" className="link link--dia text-nn-tgray1 hover:text-nn-t1">Community</Link>

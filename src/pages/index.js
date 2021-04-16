@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import HeaderHome from "../components/headerhome"
 import Feature from "../components/feature"
 import Arch from "../components/arch"
-import Card from "../components/card"
+import TrustedBy from "../components/trustedby"
 import SupportedPlatforms from "../components/platform"
 import Footer from "../components/footer"
 
@@ -56,7 +56,7 @@ class Home extends React.Component {
           </div>
         </div>
         <Arch />
-        <Card />
+        <TrustedBy />
         <SupportedPlatforms />
         <Footer />
       </div>

@@ -9,29 +9,28 @@ export default function Footer() {
                         <text className="logo-1" transform="translate(0 102.66)">WebNN</text>
                     </svg>
                 </Link>
-                <div className="w-2/3 block sm:flex text-sm mt-6 lg:mt-0 flist">
-                    <ul className="list-none p-0 flex flex-col text-left w-full">
-                        <li className="inline-block py-2 font-light uppercase tracking-wide">Features</li>
+                <div className="md:w-2/3 block sm:grid sm:grid-cols-2 md:grid-cols-4 text-sm mt-6 lg:mt-0 flist">
+                    <ul className="list-none p-0 text-left">
+                        <li className="inline-block py-2 font-light uppercase">Features</li>
                         <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">WebNN Native</a></li>
                         <li><Link to="/demo/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Demo</Link></li>
                         <li><Link to="/performance/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Performance</Link></li>
                         <li><Link to="/benchmark/"  className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Benchmark</Link></li>
                     </ul>
-                    <ul className="list-none p-0 flex flex-col text-left w-full">
-                        <li><Link to="/community/" className="inline-block py-2 font-light uppercase tracking-wide">Community</Link></li>
+                    <ul className="list-none p-0 text-left">
+                        <li><Link to="/community/" className="inline-block py-2 font-light uppercase">Community</Link></li>
                         <li><Link to="/blog/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Blog</Link></li>
-                        <li><Link to="/spec/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Spec</Link></li>
-                        <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">W3C Working Group</a></li>
+                        <li><Link to="/community/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Spec &amp; Contribution</Link></li>
                         <li><Link to="/faq/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">FAQ</Link></li>
                     </ul>
-                    <ul className="list-none p-0 flex flex-col text-left w-full">
-                        <li className="inline-block py-2 font-light uppercase tracking-wide">Developers</li>
+                    <ul className="list-none p-0 text-left">
+                        <li className="inline-block py-2 font-light uppercase">Developers</li>
                         <li><Link to="/get-started/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Get Started</Link></li>
                         <li><a href="#" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Developer API</a></li>
                         <li><Link to="/doc/" className="link link--leda inline-block py-1 text-gray-100 hover:text-white no-underline">Documentation</Link></li>
                     </ul>
-                    <div className="flex flex-col w-full followus">
-                        <div className="inline-block py-2 px-3 font-light uppercase tracking-wide font-light">Follow Us</div>
+                    <div className="followus">
+                        <div className="inline-block py-2 px-3 font-light uppercase font-light">Follow Us</div>
                         <div className="flex pl-4 justify-start mt-2">
                             <a className="block flex items-center text-gray-100 hover:text-white mr-6 no-underline" href="#">
                                 <svg viewBox="0 0 24 24" className="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg">

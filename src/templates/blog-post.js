@@ -25,7 +25,7 @@ class BlogPost extends React.Component {
             <div className="col-span-1 justify-self-end frame">
 
               <div className="sbdocs">
-                <h3 className="uppercase tracking-wider font-light text-xs">Get Started (Web)</h3>
+                <h3 className="uppercase font-light text-xs">Get Started (Web)</h3>
                 <nav>
                     <ul>
                     {   
@@ -40,7 +40,7 @@ class BlogPost extends React.Component {
                     </ul>
                 </nav>
 
-                <h3 className="uppercase tracking-wider font-light text-xs">Blog</h3>
+                <h3 className="uppercase font-light text-xs">Blog</h3>
                 <nav>
                     <ul>
                     {   
@@ -55,7 +55,7 @@ class BlogPost extends React.Component {
                     </ul>
                 </nav>
 
-                <h3 className="uppercase tracking-wider font-light text-xs">Documentation</h3>
+                <h3 className="uppercase font-light text-xs">Documentation</h3>
                 <nav>
                     <ul>
                     {   
@@ -70,7 +70,7 @@ class BlogPost extends React.Component {
                     </ul>
                 </nav>
 
-                <h3 className="uppercase tracking-wider font-light text-xs">FAQ</h3>
+                <h3 className="uppercase font-light text-xs">FAQ</h3>
                 <nav className="navlast">
                     <ul>
                     {   
